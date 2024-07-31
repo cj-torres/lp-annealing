@@ -126,4 +126,3 @@ def test_3(n):
     target = in_tensors
     print((model(in_tensors) - target).pow(2).mean().item())
     print(list(model.parameters()))
-
