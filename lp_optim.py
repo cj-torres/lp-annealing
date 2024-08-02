@@ -46,7 +46,7 @@ class LPAnnealingAGD(torch.optim.Optimizer):
 
 
 class LPAnnealingAdam(torch.optim.Optimizer):
-    def __init__(self, params, beta_1=.9, beta_2=.999, alpha=10e-3, epsilon=10e-8,
+    def __init__(self, params, beta_1=.9, beta_2=.999, alpha=1e-3, epsilon=1e-8,
                  decay_rate=1e-3, start_lp=1.0, end_lp=None, gamma=.999):
         if end_lp is None:
             # default annealing target is point of maximum sparsity, proof will be in paper
