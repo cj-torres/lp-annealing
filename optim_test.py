@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 from torchvision import datasets, transforms
 from torch.utils.data import DataLoader
-from lp_optim import AnnealingOptim
+from lp_optim import LPAnnealingAdam, LPAnnealingAGD
 
 
 # Define a simple neural network
@@ -40,6 +40,8 @@ class SimpleNN(nn.Module):
         x = self.fc3(x)
         return x
 
+def l_0_norm(model: nn.Module):
+    return ([torch.sum(torch.abs(param))  for param in model.parameters()])
 
 # Load the MNIST dataset
 # Hyperparameters
@@ -63,7 +65,7 @@ test_loader = DataLoader(dataset=test_dataset, batch_size=batch_size, shuffle=Fa
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = SimpleCNN().to(device)
 criterion = nn.CrossEntropyLoss()
-optimizer = AnnealingOptim(model.parameters(), lr=1e-2, decay_rate=1e-5, start_lp=1.0, gamma=.99)
+optimizer = LPAnnealingAdam(model.parameters(), alpha=1e-2, decay_rate=1e-6, start_lp=1.0, gamma=.99)
 #optimizer = torch.optim.Adam(model.parameters())
 #optimizer = torch.optim.SGD(model.parameters(), lr=1e-2)
 
@@ -86,7 +88,7 @@ for epoch in range(num_epochs):
         total += target.size(0)
 
         if batch_idx % 100 == 0:
-            l0 = sum([param.nonzero().sum().item() for param in model.parameters()])
+            l0 = sum([(param != 0.0).sum().item() for param in model.parameters()])
             print(f'Train Epoch: {epoch} [{batch_idx * len(data)}/{len(train_loader.dataset)}'
                   f'({100. * batch_idx / len(train_loader):.0f}%)]\tLoss: {loss.item():.6f}\tComplexity: {l0} parameters')
 
@@ -104,10 +106,11 @@ for epoch in range(num_epochs):
             test_loss += criterion(output, target).item()
             pred = output.argmax(dim=1, keepdim=True)
             correct += pred.eq(target.view_as(pred)).sum().item()
-        l0 = sum([param.nonzero().sum().item() for param in model.parameters()])
+        l0 = sum([(param != 0.0).sum().item() for param in model.parameters()])
+        num_params = sum([param.numel() for param in model.parameters()])
 
     test_loss /= len(test_loader.dataset)
     accuracy = 100. * correct / len(test_loader.dataset)
     print(
         f'\nTest set: Average loss: {test_loss:.4f}, Accuracy: {correct}/{len(test_loader.dataset)} ({accuracy:.2f}%),'
-        f'Model complexity: {l0} parameters\n')
+        f'Model complexity: {l0}/{num_params} parameters\n')
