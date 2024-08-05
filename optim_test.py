@@ -65,7 +65,7 @@ test_loader = DataLoader(dataset=test_dataset, batch_size=batch_size, shuffle=Fa
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = SimpleCNN().to(device)
 criterion = nn.CrossEntropyLoss()
-optimizer = LPAnnealingAdam(model.parameters(), alpha=1e-3, decay_rate=1e-6, start_lp=1.0, gamma=.99)
+optimizer = LPAnnealingAdam(model.parameters(), alpha=1e-3, decay_rate=1e-3, start_lp=1.0, gamma=.99)
 #optimizer = torch.optim.Adam(model.parameters())
 #optimizer = torch.optim.SGD(model.parameters(), lr=1e-2)
 
