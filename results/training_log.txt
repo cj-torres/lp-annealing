@@ -1,0 +1,396 @@
+Epoch 1/10, Gamma: 0.0, Decay Rate: 0.0001, Loss: 0.0025, Accuracy: 95.73%, Model Complexity: 3691/421642
+Elapsed Time: 00:00:53.71
+Epoch 2/10, Gamma: 0.0, Decay Rate: 0.0001, Loss: 0.0021, Accuracy: 96.16%, Model Complexity: 2494/421642
+Elapsed Time: 00:01:46.83
+Epoch 3/10, Gamma: 0.0, Decay Rate: 0.0001, Loss: 0.0021, Accuracy: 96.21%, Model Complexity: 1940/421642
+Elapsed Time: 00:02:40.09
+Epoch 4/10, Gamma: 0.0, Decay Rate: 0.0001, Loss: 0.0020, Accuracy: 96.26%, Model Complexity: 1625/421642
+Elapsed Time: 00:03:32.80
+Epoch 5/10, Gamma: 0.0, Decay Rate: 0.0001, Loss: 0.0021, Accuracy: 96.23%, Model Complexity: 1423/421642
+Elapsed Time: 00:04:26.30
+Epoch 6/10, Gamma: 0.0, Decay Rate: 0.0001, Loss: 0.0022, Accuracy: 95.88%, Model Complexity: 1275/421642
+Elapsed Time: 00:05:19.39
+Epoch 7/10, Gamma: 0.0, Decay Rate: 0.0001, Loss: 0.0022, Accuracy: 95.83%, Model Complexity: 1227/421642
+Elapsed Time: 00:06:12.57
+Epoch 8/10, Gamma: 0.0, Decay Rate: 0.0001, Loss: 0.0023, Accuracy: 95.74%, Model Complexity: 1119/421642
+Elapsed Time: 00:07:05.11
+Epoch 9/10, Gamma: 0.0, Decay Rate: 0.0001, Loss: 0.0024, Accuracy: 95.58%, Model Complexity: 1101/421642
+Elapsed Time: 00:07:57.77
+Epoch 10/10, Gamma: 0.0, Decay Rate: 0.0001, Loss: 0.0025, Accuracy: 95.57%, Model Complexity: 1117/421642
+Elapsed Time: 00:08:50.36
+Epoch 1/10, Gamma: 0.0, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 64/421642
+Elapsed Time: 00:09:41.31
+Epoch 2/10, Gamma: 0.0, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:10:31.76
+Epoch 3/10, Gamma: 0.0, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:11:22.14
+Epoch 4/10, Gamma: 0.0, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:12:12.46
+Epoch 5/10, Gamma: 0.0, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:13:02.99
+Epoch 6/10, Gamma: 0.0, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:13:53.24
+Epoch 7/10, Gamma: 0.0, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:14:43.66
+Epoch 8/10, Gamma: 0.0, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:15:34.18
+Epoch 9/10, Gamma: 0.0, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:16:24.28
+Epoch 10/10, Gamma: 0.0, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:17:14.48
+Epoch 1/10, Gamma: 0.0, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:18:04.89
+Epoch 2/10, Gamma: 0.0, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:18:55.05
+Epoch 3/10, Gamma: 0.0, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:19:45.37
+Epoch 4/10, Gamma: 0.0, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:20:36.30
+Epoch 5/10, Gamma: 0.0, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:21:26.70
+Epoch 6/10, Gamma: 0.0, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:22:16.99
+Epoch 7/10, Gamma: 0.0, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:23:07.25
+Epoch 8/10, Gamma: 0.0, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:23:57.27
+Epoch 9/10, Gamma: 0.0, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:24:47.50
+Epoch 10/10, Gamma: 0.0, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:25:39.39
+Epoch 1/10, Gamma: 0.0, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:26:29.91
+Epoch 2/10, Gamma: 0.0, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:27:22.84
+Epoch 3/10, Gamma: 0.0, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:28:13.00
+Epoch 4/10, Gamma: 0.0, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:29:02.89
+Epoch 5/10, Gamma: 0.0, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:30:02.79
+Epoch 6/10, Gamma: 0.0, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:30:58.65
+Epoch 7/10, Gamma: 0.0, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:31:50.48
+Epoch 8/10, Gamma: 0.0, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:32:42.74
+Epoch 9/10, Gamma: 0.0, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:33:34.21
+Epoch 10/10, Gamma: 0.0, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:34:26.17
+Epoch 1/10, Gamma: 0.0, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:35:17.83
+Epoch 2/10, Gamma: 0.0, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:36:13.66
+Epoch 3/10, Gamma: 0.0, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:37:04.96
+Epoch 4/10, Gamma: 0.0, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:37:56.20
+Epoch 5/10, Gamma: 0.0, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:38:47.57
+Epoch 6/10, Gamma: 0.0, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:39:40.66
+Epoch 7/10, Gamma: 0.0, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:40:32.85
+Epoch 8/10, Gamma: 0.0, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:41:24.94
+Epoch 9/10, Gamma: 0.0, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:42:16.89
+Epoch 10/10, Gamma: 0.0, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:43:08.86
+Epoch 1/10, Gamma: 0.2, Decay Rate: 0.0001, Loss: 0.0024, Accuracy: 95.96%, Model Complexity: 3228/421642
+Elapsed Time: 00:44:02.80
+Epoch 2/10, Gamma: 0.2, Decay Rate: 0.0001, Loss: 0.0022, Accuracy: 96.03%, Model Complexity: 2213/421642
+Elapsed Time: 00:44:56.70
+Epoch 3/10, Gamma: 0.2, Decay Rate: 0.0001, Loss: 0.0021, Accuracy: 96.12%, Model Complexity: 1817/421642
+Elapsed Time: 00:45:50.95
+Epoch 4/10, Gamma: 0.2, Decay Rate: 0.0001, Loss: 0.0021, Accuracy: 96.22%, Model Complexity: 1558/421642
+Elapsed Time: 00:46:44.41
+Epoch 5/10, Gamma: 0.2, Decay Rate: 0.0001, Loss: 0.0020, Accuracy: 96.37%, Model Complexity: 1371/421642
+Elapsed Time: 00:47:38.00
+Epoch 6/10, Gamma: 0.2, Decay Rate: 0.0001, Loss: 0.0021, Accuracy: 96.38%, Model Complexity: 1242/421642
+Elapsed Time: 00:48:31.60
+Epoch 7/10, Gamma: 0.2, Decay Rate: 0.0001, Loss: 0.0021, Accuracy: 96.18%, Model Complexity: 1153/421642
+Elapsed Time: 00:49:25.57
+Epoch 8/10, Gamma: 0.2, Decay Rate: 0.0001, Loss: 0.0023, Accuracy: 96.09%, Model Complexity: 1082/421642
+Elapsed Time: 00:50:19.73
+Epoch 9/10, Gamma: 0.2, Decay Rate: 0.0001, Loss: 0.0023, Accuracy: 96.03%, Model Complexity: 1019/421642
+Elapsed Time: 00:51:13.68
+Epoch 10/10, Gamma: 0.2, Decay Rate: 0.0001, Loss: 0.0024, Accuracy: 95.91%, Model Complexity: 962/421642
+Elapsed Time: 00:52:07.68
+Epoch 1/10, Gamma: 0.2, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 57/421642
+Elapsed Time: 00:52:59.92
+Epoch 2/10, Gamma: 0.2, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:53:52.00
+Epoch 3/10, Gamma: 0.2, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:54:43.94
+Epoch 4/10, Gamma: 0.2, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:55:36.01
+Epoch 5/10, Gamma: 0.2, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:56:27.82
+Epoch 6/10, Gamma: 0.2, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:57:19.86
+Epoch 7/10, Gamma: 0.2, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:58:11.79
+Epoch 8/10, Gamma: 0.2, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:59:03.51
+Epoch 9/10, Gamma: 0.2, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 00:59:55.41
+Epoch 10/10, Gamma: 0.2, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 01:00:47.50
+Epoch 1/10, Gamma: 0.2, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 01:01:39.51
+Epoch 2/10, Gamma: 0.2, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 01:02:31.83
+Epoch 3/10, Gamma: 0.2, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 01:03:23.85
+Epoch 4/10, Gamma: 0.2, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 01:04:15.79
+Epoch 5/10, Gamma: 0.2, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 01:05:07.91
+Epoch 6/10, Gamma: 0.2, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 01:05:59.95
+Epoch 7/10, Gamma: 0.2, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 01:06:51.90
+Epoch 8/10, Gamma: 0.2, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 01:07:44.10
+Epoch 9/10, Gamma: 0.2, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 01:08:36.17
+Epoch 10/10, Gamma: 0.2, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 01:09:28.24
+Epoch 1/10, Gamma: 0.2, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 01:10:20.22
+Epoch 2/10, Gamma: 0.2, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 01:11:12.23
+Epoch 3/10, Gamma: 0.2, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 01:12:04.20
+Epoch 4/10, Gamma: 0.2, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 01:12:56.24
+Epoch 5/10, Gamma: 0.2, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 01:13:47.95
+Epoch 6/10, Gamma: 0.2, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 01:14:39.76
+Epoch 7/10, Gamma: 0.2, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 01:15:32.12
+Epoch 8/10, Gamma: 0.2, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 01:16:24.09
+Epoch 9/10, Gamma: 0.2, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 01:17:16.13
+Epoch 10/10, Gamma: 0.2, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 01:18:08.33
+Epoch 1/10, Gamma: 0.2, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 01:19:00.09
+Epoch 2/10, Gamma: 0.2, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 01:19:52.00
+Epoch 3/10, Gamma: 0.2, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 01:20:43.90
+Epoch 4/10, Gamma: 0.2, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 01:21:35.64
+Epoch 5/10, Gamma: 0.2, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 01:22:27.34
+Epoch 6/10, Gamma: 0.2, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 01:23:19.16
+Epoch 7/10, Gamma: 0.2, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 01:24:11.08
+Epoch 8/10, Gamma: 0.2, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 01:25:02.96
+Epoch 9/10, Gamma: 0.2, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 01:25:54.80
+Epoch 10/10, Gamma: 0.2, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 01:26:46.96
+Epoch 1/10, Gamma: 0.4, Decay Rate: 0.0001, Loss: 0.0025, Accuracy: 95.46%, Model Complexity: 3300/421642
+Elapsed Time: 01:27:40.50
+Epoch 2/10, Gamma: 0.4, Decay Rate: 0.0001, Loss: 0.0022, Accuracy: 95.99%, Model Complexity: 2252/421642
+Elapsed Time: 01:28:34.34
+Epoch 3/10, Gamma: 0.4, Decay Rate: 0.0001, Loss: 0.0022, Accuracy: 96.17%, Model Complexity: 1800/421642
+Elapsed Time: 01:29:28.12
+Epoch 4/10, Gamma: 0.4, Decay Rate: 0.0001, Loss: 0.0021, Accuracy: 96.24%, Model Complexity: 1521/421642
+Elapsed Time: 01:30:22.30
+Epoch 5/10, Gamma: 0.4, Decay Rate: 0.0001, Loss: 0.0022, Accuracy: 96.09%, Model Complexity: 1358/421642
+Elapsed Time: 01:31:16.39
+Epoch 6/10, Gamma: 0.4, Decay Rate: 0.0001, Loss: 0.0023, Accuracy: 95.89%, Model Complexity: 1271/421642
+Elapsed Time: 01:32:10.04
+Epoch 7/10, Gamma: 0.4, Decay Rate: 0.0001, Loss: 0.0024, Accuracy: 95.77%, Model Complexity: 1153/421642
+Elapsed Time: 01:33:03.57
+Epoch 8/10, Gamma: 0.4, Decay Rate: 0.0001, Loss: 0.0025, Accuracy: 95.66%, Model Complexity: 1089/421642
+Elapsed Time: 01:33:57.19
+Epoch 9/10, Gamma: 0.4, Decay Rate: 0.0001, Loss: 0.0025, Accuracy: 95.39%, Model Complexity: 1015/421642
+Elapsed Time: 01:34:50.76
+Epoch 10/10, Gamma: 0.4, Decay Rate: 0.0001, Loss: 0.0026, Accuracy: 95.31%, Model Complexity: 993/421642
+Elapsed Time: 01:35:44.27
+Epoch 1/10, Gamma: 0.4, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 63/421642
+Elapsed Time: 01:36:36.58
+Epoch 2/10, Gamma: 0.4, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 01:37:28.97
+Epoch 3/10, Gamma: 0.4, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 01:38:20.98
+Epoch 4/10, Gamma: 0.4, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 01:39:12.81
+Epoch 5/10, Gamma: 0.4, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 01:40:05.15
+Epoch 6/10, Gamma: 0.4, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 02:31:59.47
+Epoch 7/10, Gamma: 0.4, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 02:32:57.39
+Epoch 8/10, Gamma: 0.4, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 02:33:50.10
+Epoch 9/10, Gamma: 0.4, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 02:34:43.18
+Epoch 10/10, Gamma: 0.4, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 02:35:36.31
+Epoch 1/10, Gamma: 0.4, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 02:36:29.60
+Epoch 2/10, Gamma: 0.4, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 02:37:22.98
+Epoch 3/10, Gamma: 0.4, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 02:38:16.33
+Epoch 4/10, Gamma: 0.4, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 02:39:09.58
+Epoch 5/10, Gamma: 0.4, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 02:40:03.07
+Epoch 6/10, Gamma: 0.4, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 02:40:56.32
+Epoch 7/10, Gamma: 0.4, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 02:41:49.32
+Epoch 8/10, Gamma: 0.4, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 02:42:42.17
+Epoch 9/10, Gamma: 0.4, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 02:43:35.11
+Epoch 10/10, Gamma: 0.4, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 02:44:27.95
+Epoch 1/10, Gamma: 0.4, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 02:45:20.92
+Epoch 2/10, Gamma: 0.4, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 02:46:14.61
+Epoch 3/10, Gamma: 0.4, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 02:47:07.42
+Epoch 4/10, Gamma: 0.4, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 02:48:00.11
+Epoch 5/10, Gamma: 0.4, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 02:48:52.97
+Epoch 6/10, Gamma: 0.4, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 02:49:45.89
+Epoch 7/10, Gamma: 0.4, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 02:50:38.71
+Epoch 8/10, Gamma: 0.4, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 02:51:31.62
+Epoch 9/10, Gamma: 0.4, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 02:52:24.64
+Epoch 10/10, Gamma: 0.4, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 02:53:17.38
+Epoch 1/10, Gamma: 0.4, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 02:54:09.68
+Epoch 2/10, Gamma: 0.4, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 02:55:02.95
+Epoch 3/10, Gamma: 0.4, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 02:55:55.92
+Epoch 4/10, Gamma: 0.4, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 02:56:48.77
+Epoch 5/10, Gamma: 0.4, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 02:57:41.67
+Epoch 6/10, Gamma: 0.4, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 02:58:34.46
+Epoch 7/10, Gamma: 0.4, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 02:59:27.16
+Epoch 8/10, Gamma: 0.4, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:00:20.03
+Epoch 9/10, Gamma: 0.4, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:01:13.27
+Epoch 10/10, Gamma: 0.4, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:02:06.04
+Epoch 1/10, Gamma: 0.6, Decay Rate: 0.0001, Loss: 0.0026, Accuracy: 95.33%, Model Complexity: 3491/421642
+Elapsed Time: 03:03:00.54
+Epoch 2/10, Gamma: 0.6, Decay Rate: 0.0001, Loss: 0.0023, Accuracy: 95.98%, Model Complexity: 2354/421642
+Elapsed Time: 03:03:55.31
+Epoch 3/10, Gamma: 0.6, Decay Rate: 0.0001, Loss: 0.0022, Accuracy: 96.23%, Model Complexity: 1905/421642
+Elapsed Time: 03:04:49.98
+Epoch 4/10, Gamma: 0.6, Decay Rate: 0.0001, Loss: 0.0022, Accuracy: 96.09%, Model Complexity: 1609/421642
+Elapsed Time: 03:05:44.72
+Epoch 5/10, Gamma: 0.6, Decay Rate: 0.0001, Loss: 0.0023, Accuracy: 96.10%, Model Complexity: 1433/421642
+Elapsed Time: 03:06:39.70
+Epoch 6/10, Gamma: 0.6, Decay Rate: 0.0001, Loss: 0.0023, Accuracy: 96.03%, Model Complexity: 1293/421642
+Elapsed Time: 03:07:34.41
+Epoch 7/10, Gamma: 0.6, Decay Rate: 0.0001, Loss: 0.0023, Accuracy: 96.11%, Model Complexity: 1209/421642
+Elapsed Time: 03:08:29.08
+Epoch 8/10, Gamma: 0.6, Decay Rate: 0.0001, Loss: 0.0024, Accuracy: 96.07%, Model Complexity: 1102/421642
+Elapsed Time: 03:09:25.16
+Epoch 9/10, Gamma: 0.6, Decay Rate: 0.0001, Loss: 0.0025, Accuracy: 95.76%, Model Complexity: 1039/421642
+Elapsed Time: 03:10:19.74
+Epoch 10/10, Gamma: 0.6, Decay Rate: 0.0001, Loss: 0.0026, Accuracy: 95.72%, Model Complexity: 990/421642
+Elapsed Time: 03:11:13.51
+Epoch 1/10, Gamma: 0.6, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 58/421642
+Elapsed Time: 03:12:05.67
+Epoch 2/10, Gamma: 0.6, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:12:57.83
+Epoch 3/10, Gamma: 0.6, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:13:49.69
+Epoch 4/10, Gamma: 0.6, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:14:41.32
+Epoch 5/10, Gamma: 0.6, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:15:33.16
+Epoch 6/10, Gamma: 0.6, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:16:25.03
+Epoch 7/10, Gamma: 0.6, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:17:16.68
+Epoch 8/10, Gamma: 0.6, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:18:11.31
+Epoch 9/10, Gamma: 0.6, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:19:04.60
+Epoch 10/10, Gamma: 0.6, Decay Rate: 0.0003, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:19:55.99
+Epoch 1/10, Gamma: 0.6, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:20:47.34
+Epoch 2/10, Gamma: 0.6, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:21:38.57
+Epoch 3/10, Gamma: 0.6, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:22:30.05
+Epoch 4/10, Gamma: 0.6, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:23:21.69
+Epoch 5/10, Gamma: 0.6, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:24:13.11
+Epoch 6/10, Gamma: 0.6, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:25:04.61
+Epoch 7/10, Gamma: 0.6, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:25:56.29
+Epoch 8/10, Gamma: 0.6, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:26:47.97
+Epoch 9/10, Gamma: 0.6, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:27:39.25
+Epoch 10/10, Gamma: 0.6, Decay Rate: 0.0005, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:28:30.39
+Epoch 1/10, Gamma: 0.6, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:29:21.31
+Epoch 2/10, Gamma: 0.6, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:30:12.55
+Epoch 3/10, Gamma: 0.6, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:31:04.05
+Epoch 4/10, Gamma: 0.6, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:31:55.24
+Epoch 5/10, Gamma: 0.6, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:32:46.67
+Epoch 6/10, Gamma: 0.6, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:33:38.53
+Epoch 7/10, Gamma: 0.6, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:34:30.05
+Epoch 8/10, Gamma: 0.6, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:35:21.58
+Epoch 9/10, Gamma: 0.6, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:36:13.00
+Epoch 10/10, Gamma: 0.6, Decay Rate: 0.0007, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:37:04.35
+Epoch 1/10, Gamma: 0.6, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:38:00.01
+Epoch 2/10, Gamma: 0.6, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:38:55.52
+Epoch 3/10, Gamma: 0.6, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:39:51.22
+Epoch 4/10, Gamma: 0.6, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:40:47.58
+Epoch 5/10, Gamma: 0.6, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:41:43.43
+Epoch 6/10, Gamma: 0.6, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:42:34.92
+Epoch 7/10, Gamma: 0.6, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:43:27.77
+Epoch 8/10, Gamma: 0.6, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
+Elapsed Time: 03:44:21.15

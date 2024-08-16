@@ -123,7 +123,6 @@ class LPAnnealingAdam(torch.optim.Optimizer):
         if end_lp is None:
             # default annealing target is point of maximum sparsity, proof will be in paper
             end_lp = -2 / lambertw(-2*decay_rate/math.e, k=-1).real
-
         defaults = dict(beta_1=beta_1, beta_2=beta_2, alpha=alpha, epsilon=epsilon,
                         decay_rate=decay_rate, start_lp=start_lp, end_lp=end_lp, gamma=gamma)
         super(LPAnnealingAdam, self).__init__(params, defaults)
@@ -164,7 +163,7 @@ class LPAnnealingAdam(torch.optim.Optimizer):
                 d_p = -m_i_hat/(torch.sqrt(v_i_hat) + epsilon)
                 d_p.mul_(alpha)
                 p.data.add_(d_p)
-                decay = self._lp_decay(p, lp, (torch.sqrt(v_i_hat) + epsilon)*decay_rate)
+                decay = self._lp_decay(p, lp, decay_rate)
                 p.data.add_(decay)
             group['lp'] -= (1-gamma)*(lp-end_lp)
             group['beta_1_t'] *= beta_1
