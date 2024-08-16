@@ -152,7 +152,7 @@ def perform_grid_search(gamma_values, decay_rate_values, num_epochs, batch_size,
             print(f"Training with gamma={gamma}, decay_rate={decay_rate}")
             model = SimpleCNN().to(device)
             optimizer = LPAnnealingAdam(model.parameters(), alpha=learning_rate, decay_rate=decay_rate, start_lp=1.0, gamma=gamma)
-
+    
             # Training loop
             for epoch in range(num_epochs):
                 train_accuracy = train_epoch(model, device, train_loader, optimizer, criterion, epoch)
