@@ -46,14 +46,20 @@ def l_0_norm(model: nn.Module):
     return ([torch.sum(torch.abs(param))  for param in model.parameters()])
 
 # Load the MNIST dataset
-def load_data(batch_size):
+def load_data(batch_size, dataset_name='MNIST'):
     transform = transforms.Compose([
         transforms.ToTensor(),
         transforms.Normalize((0.1307,), (0.3081,))
     ])
 
-    train_dataset = datasets.MNIST(root='./data', train=True, download=True, transform=transform)
-    test_dataset = datasets.MNIST(root='./data', train=False, transform=transform)
+    try:
+        dataset_class = getattr(datasets, dataset_name)
+    except AttributeError:
+        raise ValueError(f"Dataset {dataset_name} is not available in torchvision.datasets.")
+
+
+    train_dataset = dataset_class(root='./data', train=True, download=True, transform=transform)
+    test_dataset = dataset_class(root='./data', train=False, transform=transform)
 
     train_loader = DataLoader(dataset=train_dataset, batch_size=batch_size, shuffle=True)
     test_loader = DataLoader(dataset=test_dataset, batch_size=batch_size, shuffle=False)
@@ -135,9 +141,27 @@ def validate(model, device, test_loader, criterion, epoch):
     log_message(message)
     return test_loss, accuracy
 
+def perform_baseline(model, device, num_epochs, train_loader, test_loader, criterion, log_path):
+    optimizer = torch.optim.Adam(model.parameters())
+    for epoch in range(num_epochs):
+        train_accuracy = train_epoch(model, device, train_loader, optimizer, criterion, epoch)
+        test_loss, test_accuracy = validate(model, device, test_loader, criterion, epoch)
+        l0, num_params = get_model_complexity(model)
+        log_message(
+            f'Epoch {epoch + 1}/{num_epochs}, '
+            f'Loss: {test_loss:.4f}, Accuracy: {test_accuracy:.2f}%, '
+            f'Model Complexity: {l0}/{num_params}\n',
+            log_path)
+    
+    # Write the results of the final epoch to the CSV file
+    with open(csv_file, mode='a', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow(["BaselineAdam", "NA", "NA", l0, test_accuracy, test_loss])
+
 def perform_grid_search(gamma_values, decay_rate_values, num_epochs, batch_size, learning_rate, csv_file, log_path):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     criterion = nn.CrossEntropyLoss()
+    model = SimpleCNN().to(device)
 
     train_loader, test_loader = load_data(batch_size)
     
@@ -145,14 +169,18 @@ def perform_grid_search(gamma_values, decay_rate_values, num_epochs, batch_size,
     with open(csv_file, mode='w', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(["Optimizer", "Gamma", "Decay Rate", "L0", "Accuracy", "Loss"])
+
+    log_message(f'Start baseline optimizer', log_path)
+    perform_baseline(model, device, num_epochs, train_loader, test_loader, criterion, log_path)
+    log_message(f'End baseline optimizer', log_path)
+
     start_time = time.time()
     # Perform grid search
     for gamma in gamma_values:
         for decay_rate in decay_rate_values:
-            print(f"Training with gamma={gamma}, decay_rate={decay_rate}")
-            model = SimpleCNN().to(device)
+            log_message(f"Training with gamma={gamma}, decay_rate={decay_rate}", log_path)
             optimizer = LPAnnealingAdam(model.parameters(), alpha=learning_rate, decay_rate=decay_rate, start_lp=1.0, gamma=gamma)
-    
+
             # Training loop
             for epoch in range(num_epochs):
                 train_accuracy = train_epoch(model, device, train_loader, optimizer, criterion, epoch)
@@ -171,10 +199,9 @@ def perform_grid_search(gamma_values, decay_rate_values, num_epochs, batch_size,
             with open(csv_file, mode='a', newline='') as file:
                 writer = csv.writer(file)
                 writer.writerow(["LPAnnealingAdam", gamma, decay_rate, l0, test_accuracy, test_loss])
-    message = (f'Total Elapsed Time {format_time(time.time()-start_time)}')
-    log_message(message, log_path)
-    message = (f"Grid search completed and results saved to {csv_file}")
-    log_message(message, log_path)
+    log_message(f'Total Elapsed Time {format_time(time.time()-start_time)}', log_path)
+    log_message(f"Grid search completed and results saved to {csv_file}", log_path)
+
 
 # Define the grid search parameters
 # gamma_values = [round(x * 0.05, 2) for x in range(20)] + [0.99, 0.999] # 22 values
