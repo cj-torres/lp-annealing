@@ -158,7 +158,7 @@ def perform_baseline(model, device, num_epochs, train_loader, test_loader, crite
         writer = csv.writer(file)
         writer.writerow(["BaselineAdam", "NA", "NA", l0, test_accuracy, test_loss])
 
-def perform_grid_search(gamma_values, decay_rate_values, num_epochs, batch_size, learning_rate, csv_file, log_path):
+def perform_grid_search(gamma_values, decay_rate_values, num_epochs, batch_size, csv_file, log_path):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     criterion = nn.CrossEntropyLoss()
     model = SimpleCNN().to(device)
@@ -179,7 +179,7 @@ def perform_grid_search(gamma_values, decay_rate_values, num_epochs, batch_size,
     for gamma in gamma_values:
         for decay_rate in decay_rate_values:
             log_message(f"Training with gamma={gamma}, decay_rate={decay_rate}", log_path)
-            optimizer = LPAnnealingAdam(model.parameters(), alpha=learning_rate, decay_rate=decay_rate, start_lp=1.0, gamma=gamma)
+            optimizer = LPAnnealingAdam(model.parameters(), alpha=decay_rate*10, decay_rate=decay_rate, start_lp=1.0, gamma=gamma)
 
             # Training loop
             for epoch in range(num_epochs):
@@ -206,13 +206,13 @@ def perform_grid_search(gamma_values, decay_rate_values, num_epochs, batch_size,
 # Define the grid search parameters
 # gamma_values = [round(x * 0.05, 2) for x in range(20)] + [0.99, 0.999] # 22 values
 # decay_rate_values = [round(1e-4 + x * 5e-5, 7) for x in range(21)] # 21 values
-gamma_values = [round(x * 0.2, 2) for x in range(5)] + [0.95, 0.99, 0.999] # 8 values
-decay_rate_values = [round(1e-4 + x * 2e-4, 7) for x in range(5)] # 5 values
+gamma_values = [0.95, 0.99, .995, 0.999] # 4 values
+decay_rate_values = [1e-3, 5e-3, 1e-4, 5e-4, 1e-5, 5e-5] # 6 values
 num_epochs = 10
 batch_size = 64
-learning_rate = 0.001
+#learning_rate = 0.001
 csv_file = 'results/grid_search_results.csv'
 log_path = 'results/training_log.txt'
 
 # Execute the grid search
-perform_grid_search(gamma_values, decay_rate_values, num_epochs, batch_size, learning_rate, csv_file, log_path)
+perform_grid_search(gamma_values, decay_rate_values, num_epochs, batch_size, csv_file, log_path)
