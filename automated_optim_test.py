@@ -161,7 +161,6 @@ def perform_baseline(model, device, num_epochs, train_loader, test_loader, crite
 def perform_grid_search(gamma_values, decay_rate_values, num_epochs, batch_size, csv_file, log_path):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     criterion = nn.CrossEntropyLoss()
-    model = SimpleCNN().to(device)
 
     train_loader, test_loader = load_data(batch_size)
     
@@ -171,6 +170,7 @@ def perform_grid_search(gamma_values, decay_rate_values, num_epochs, batch_size,
         writer.writerow(["Optimizer", "Gamma", "Decay Rate", "L0", "Accuracy", "Loss"])
 
     log_message(f'Start baseline optimizer', log_path)
+    model = SimpleCNN().to(device)
     perform_baseline(model, device, num_epochs, train_loader, test_loader, criterion, log_path)
     log_message(f'End baseline optimizer', log_path)
 
@@ -178,6 +178,7 @@ def perform_grid_search(gamma_values, decay_rate_values, num_epochs, batch_size,
     # Perform grid search
     for gamma in gamma_values:
         for decay_rate in decay_rate_values:
+            model = SimpleCNN().to(device)
             log_message(f"Training with gamma={gamma}, decay_rate={decay_rate}", log_path)
             optimizer = LPAnnealingAdam(model.parameters(), alpha=decay_rate*10, decay_rate=decay_rate, start_lp=1.0, gamma=gamma)
 
