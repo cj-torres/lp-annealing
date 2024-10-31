@@ -20,3 +20,43 @@ Epoch 2/10, Gamma: 0.99, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Mode
 Elapsed Time: 07:10:30.76
 Epoch 3/10, Gamma: 0.99, Decay Rate: 0.0009, Loss: 0.0362, Accuracy: 9.80%, Model Complexity: 0/421642
 Elapsed Time: 07:11:35.82
+Start baseline optimizer
+Epoch 1/10, Loss: 0.0007, Accuracy: 98.51%, Model Complexity: 421642/421642
+
+Epoch 2/10, Loss: 0.0005, Accuracy: 98.95%, Model Complexity: 421642/421642
+
+Epoch 3/10, Loss: 0.0005, Accuracy: 98.89%, Model Complexity: 421642/421642
+
+Epoch 4/10, Loss: 0.0004, Accuracy: 99.05%, Model Complexity: 421642/421642
+
+Epoch 5/10, Loss: 0.0005, Accuracy: 99.09%, Model Complexity: 421642/421642
+
+Epoch 6/10, Loss: 0.0005, Accuracy: 99.07%, Model Complexity: 421642/421642
+
+Epoch 7/10, Loss: 0.0004, Accuracy: 99.13%, Model Complexity: 421642/421642
+
+Epoch 8/10, Loss: 0.0004, Accuracy: 99.21%, Model Complexity: 421642/421642
+
+Epoch 9/10, Loss: 0.0005, Accuracy: 99.12%, Model Complexity: 421642/421642
+
+Epoch 10/10, Loss: 0.0006, Accuracy: 99.09%, Model Complexity: 421642/421642
+
+End baseline optimizer
+Training with gamma=0.0, decay_rate=0.0001
+Epoch 1/10, Gamma: 0.0, Decay Rate: 0.0001, Loss: 0.0004, Accuracy: 99.22%, Model Complexity: 25261/421642
+Elapsed Time: 00:03:19.37
+Epoch 2/10, Gamma: 0.0, Decay Rate: 0.0001, Loss: 0.0005, Accuracy: 99.18%, Model Complexity: 10687/421642
+Elapsed Time: 00:07:04.24
+Epoch 3/10, Gamma: 0.0, Decay Rate: 0.0001, Loss: 0.0005, Accuracy: 98.97%, Model Complexity: 6286/421642
+Elapsed Time: 00:10:48.50
+Start baseline optimizer
+Epoch 1/10, Loss: 0.0007, Accuracy: 98.58%, Model Complexity: 421642/421642
+
+Epoch 2/10, Loss: 0.0005, Accuracy: 98.95%, Model Complexity: 421642/421642
+
+Epoch 3/10, Loss: 0.0005, Accuracy: 98.98%, Model Complexity: 421642/421642
+
+Epoch 4/10, Loss: 0.0005, Accuracy: 98.86%, Model Complexity: 421642/421642
+
+Epoch 5/10, Loss: 0.0005, Accuracy: 98.95%, Model Complexity: 421642/421642
+

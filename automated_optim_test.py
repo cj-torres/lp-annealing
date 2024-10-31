@@ -1,11 +1,10 @@
+import time
 import csv
 import torch
 import torch.nn as nn
 from torchvision import datasets, transforms
 from torch.utils.data import DataLoader
 from lp_optim import LPAnnealingAdam, LPAnnealingAGD
-import time
-
 
 # Define a simple neural network
 class SimpleCNN(nn.Module):
@@ -25,8 +24,7 @@ class SimpleCNN(nn.Module):
         x = torch.relu(self.fc1(x))
         x = self.dropout(x)
         x = self.fc2(x)
-        return torch.log_softmax(x, dim=1)
-    
+        return torch.log_softmax(x, dim=1)    
 
 class SimpleNN(nn.Module):
     def __init__(self):
@@ -158,12 +156,12 @@ def perform_baseline(model, device, num_epochs, train_loader, test_loader, crite
         writer = csv.writer(file)
         writer.writerow(["BaselineAdam", "NA", "NA", l0, test_accuracy, test_loss])
 
-def perform_grid_search(gamma_values, decay_rate_values, num_epochs, batch_size, learning_rate, csv_file, log_path):
+def perform_grid_search(gamma_values, decay_rate_values, num_epochs, batch_size, learning_rate, dataset_name, csv_file, log_path):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     criterion = nn.CrossEntropyLoss()
     model = SimpleCNN().to(device)
 
-    train_loader, test_loader = load_data(batch_size)
+    train_loader, test_loader = load_data(batch_size, dataset_name)
     
     # Write the header for the CSV file
     with open(csv_file, mode='w', newline='') as file:
@@ -211,8 +209,9 @@ decay_rate_values = [round(1e-4 + x * 2e-4, 7) for x in range(5)] # 5 values
 num_epochs = 10
 batch_size = 64
 learning_rate = 0.001
+dataset_name = 'MNIST'
 csv_file = 'results/grid_search_results.csv'
 log_path = 'results/training_log.txt'
 
 # Execute the grid search
-perform_grid_search(gamma_values, decay_rate_values, num_epochs, batch_size, learning_rate, csv_file, log_path)
+perform_grid_search(gamma_values, decay_rate_values, num_epochs, batch_size, learning_rate, dataset_name, csv_file, log_path)

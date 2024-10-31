@@ -1,1 +1,1 @@
-LPAnnealingAdam,0.99,0.0007,0,9.8,0.03615058648586273
+Optimizer,Gamma,Decay Rate,L0,Accuracy,Loss

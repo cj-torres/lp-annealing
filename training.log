@@ -1,0 +1,30 @@
+2024-10-31 12:16:20,190 - INFO - Using device: cpu
+2024-10-31 12:16:20,198 - INFO - Loading MNIST dataset...
+2024-10-31 12:16:20,230 - INFO - Dataset split into 48000 training and 12000 validation samples.
+2024-10-31 12:16:20,230 - INFO - Starting hyperparameter optimization with 50 trials.
+2024-10-31 12:16:20,230 - INFO - Starting trial 0: lam=0.002379579183988298, lr=0.00026622623631242915, batch_size=64, dropout_rate=0.33270287580943997, weight_decay=2.1617247515634574e-06, num_epochs=5
+2024-10-31 12:17:41,912 - INFO - Trial 0, Epoch 1/5 - Train Loss: 0.6871, L0 Loss: 902.5367
+2024-10-31 12:17:52,562 - INFO - Trial 0, Epoch 1/5 - Validation Loss: 0.1683, Validation Accuracy: 0.9473
+2024-10-31 12:19:12,325 - INFO - Trial 0, Epoch 2/5 - Train Loss: 0.2385, L0 Loss: 881.7290
+2024-10-31 12:19:22,199 - INFO - Trial 0, Epoch 2/5 - Validation Loss: 0.1050, Validation Accuracy: 0.9671
+2024-10-31 12:20:41,832 - INFO - Trial 0, Epoch 3/5 - Train Loss: 0.1793, L0 Loss: 855.9956
+2024-10-31 12:20:51,535 - INFO - Trial 0, Epoch 3/5 - Validation Loss: 0.0896, Validation Accuracy: 0.9712
+2024-10-31 12:22:10,475 - INFO - Trial 0, Epoch 4/5 - Train Loss: 0.1538, L0 Loss: 825.0110
+2024-10-31 12:22:20,159 - INFO - Trial 0, Epoch 4/5 - Validation Loss: 0.0790, Validation Accuracy: 0.9739
+2024-10-31 12:23:38,604 - INFO - Trial 0, Epoch 5/5 - Train Loss: 0.1448, L0 Loss: 788.7574
+2024-10-31 12:23:48,382 - INFO - Trial 0, Epoch 5/5 - Validation Loss: 0.0750, Validation Accuracy: 0.9758
+2024-10-31 12:23:48,382 - INFO - Trial 0 completed with Validation Loss: 0.0750
+2024-10-31 12:23:48,382 - INFO - Starting trial 1: lam=0.03170655110028676, lr=0.00012969613309372755, batch_size=64, dropout_rate=0.44237858192215523, weight_decay=1.2037026016615152e-06, num_epochs=13
+2024-10-31 12:25:10,209 - INFO - Trial 1, Epoch 1/13 - Train Loss: 1.1720, L0 Loss: 11440.8715
+2024-10-31 12:25:20,322 - INFO - Trial 1, Epoch 1/13 - Validation Loss: 0.3905, Validation Accuracy: 0.8913
+2024-10-31 12:26:40,244 - INFO - Trial 1, Epoch 2/13 - Train Loss: 0.5360, L0 Loss: 11269.7784
+2024-10-31 12:26:50,081 - INFO - Trial 1, Epoch 2/13 - Validation Loss: 0.2534, Validation Accuracy: 0.9286
+2024-10-31 12:28:08,888 - INFO - Trial 1, Epoch 3/13 - Train Loss: 0.4144, L0 Loss: 11082.5102
+2024-10-31 12:28:18,616 - INFO - Trial 1, Epoch 3/13 - Validation Loss: 0.2106, Validation Accuracy: 0.9423
+2024-10-31 12:29:38,280 - INFO - Trial 1, Epoch 4/13 - Train Loss: 0.3551, L0 Loss: 10879.5341
+2024-10-31 12:29:48,134 - INFO - Trial 1, Epoch 4/13 - Validation Loss: 0.1919, Validation Accuracy: 0.9483
+2024-10-31 12:31:06,566 - INFO - Trial 1, Epoch 5/13 - Train Loss: 0.3184, L0 Loss: 10661.4537
+2024-10-31 12:31:16,179 - INFO - Trial 1, Epoch 5/13 - Validation Loss: 0.1860, Validation Accuracy: 0.9540
+2024-10-31 12:32:36,912 - INFO - Trial 1, Epoch 6/13 - Train Loss: 0.2981, L0 Loss: 10428.9067
+2024-10-31 12:32:46,871 - INFO - Trial 1, Epoch 6/13 - Validation Loss: 0.1850, Validation Accuracy: 0.9567
+2024-10-31 12:34:06,853 - INFO - Trial 1, Epoch 7/13 - Train Loss: 0.2943, L0 Loss: 10182.5412
