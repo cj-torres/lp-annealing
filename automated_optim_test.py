@@ -205,11 +205,11 @@ def perform_grid_search(gamma_values, decay_rate_values, num_epochs, batch_size,
 # Define the grid search parameters
 # gamma_values = [round(x * 0.05, 2) for x in range(20)] + [0.99, 0.999] # 22 values
 # decay_rate_values = [round(1e-4 + x * 5e-5, 7) for x in range(21)] # 21 values
-gamma_values = [0.95, 0.99, .995, 0.999] # 4 values
-decay_rate_values = [1e-3, 5e-3, 1e-4, 5e-4, 1e-5, 5e-5] # 6 values
+gamma_values = [0.95, 0.99, .995, 0.999] # 4 values # tune
+decay_rate_values = [1e-3, 5e-3, 1e-4, 5e-4, 1e-5, 5e-5] # 6 values # tune 
 num_epochs = 10
 batch_size = 64
-learning_rate = 0.001
+learning_rate = 0.001 # tune
 dataset_name = 'MNIST'
 csv_file = 'results/grid_search_results.csv'
 log_path = 'results/training_log.txt'
