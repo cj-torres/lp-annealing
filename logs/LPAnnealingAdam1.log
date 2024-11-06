@@ -1,0 +1,14 @@
+2024-11-05 17:58:02,531 - INFO - Using device: cpu
+2024-11-05 17:58:02,532 - INFO - Loading MNIST dataset...
+2024-11-05 17:58:02,634 - INFO - Dataset split into 48000 training and 12000 validation samples.
+2024-11-05 17:58:02,634 - INFO - Starting multi-objective hyperparameter optimization with 50 trials.
+2024-11-05 17:58:16,907 - INFO - Using device: cpu
+2024-11-05 17:58:16,908 - INFO - Loading MNIST dataset...
+2024-11-05 17:58:16,980 - INFO - Dataset split into 48000 training and 12000 validation samples.
+2024-11-05 17:58:16,980 - INFO - Starting multi-objective hyperparameter optimization with 50 trials.
+2024-11-05 17:58:16,982 - INFO - Starting trial 0: alpha=0.014472411022787355, gamma=0.0009338849944580044
+2024-11-05 17:58:31,736 - INFO - Using device: cpu
+2024-11-05 17:58:31,736 - INFO - Loading MNIST dataset...
+2024-11-05 17:58:31,774 - INFO - Dataset split into 48000 training and 12000 validation samples.
+2024-11-05 17:58:31,775 - INFO - Starting multi-objective hyperparameter optimization with 50 trials.
+2024-11-05 17:58:31,777 - INFO - Starting trial 0: alpha=0.1791480316421392, gamma=0.0004907582742978382
