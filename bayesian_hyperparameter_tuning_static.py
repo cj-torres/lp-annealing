@@ -1,4 +1,4 @@
-# alpha, gamma, LPAnnealingAdam
+# alpha static-lp
 
 import logging
 import torch
@@ -14,6 +14,11 @@ import os
 
 BATCH_SIZE = 64
 NUM_EPOCHS = 15
+WEIGHTS = {
+    "val_loss"=0.3,
+    "val_accuracy"=0.6,
+    "sparsity"=0.1
+}
 
 log_dir = "logs"
 
@@ -24,7 +29,7 @@ logging.basicConfig(
     level=logging.INFO,  # Set to DEBUG for more detailed logs
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler(os.path.join(log_dir, "LPAnnealingAdam3.log")),
+        logging.FileHandler(os.path.join(log_dir, "StaticLPAnnealingAdam3.log")),
         logging.StreamHandler()
     ]
 )
@@ -52,9 +57,8 @@ logger.info(f"Dataset split into {train_size} training and {val_size} validation
 def objective(trial):
     # Hyperparameter search space
     alpha = trial.suggest_float('alpha', 1e-4, 1, log=True)
-    gamma = trial.suggest_float('gamma', 1e-4, 1, log=True)
 
-    logger.info(f"Starting trial {trial.number}: alpha={alpha}, gamma={gamma}")
+    logger.info(f"Starting trial {trial.number}: alpha={alpha}")
 
     # Data loaders
     train_loader = DataLoader(train_dataset, batch_size=BATCH_SIZE, shuffle=True)
@@ -65,7 +69,7 @@ def objective(trial):
 
     # Define loss function and optimizer
     criterion = nn.CrossEntropyLoss()
-    optimizer = LPAnnealingAdam(model.parameters(), alpha=alpha, start_lp=1.0, gamma=gamma)
+    optimizer = LPAnnealingAdam(model.parameters(), alpha=alpha, start_lp=1.0, end_lp=1.0)
 
     # Training loop
     for epoch in range(NUM_EPOCHS):
@@ -135,21 +139,21 @@ def objective(trial):
 # # Run the optimization
 # study = run_optimization(n_trials=2)
 
-def run_multi_objective_optimization(n_trials=50):
-    logger.info(f"Starting multi-objective hyperparameter optimization with {n_trials} trials.")
-    study = optuna.create_study(directions=['minimize', 'maximize', 'maximize'])  # Minimize loss, maximize sparsity
-    study.optimize(objective, n_trials=n_trials)
+# def run_multi_objective_optimization(n_trials=50):
+#     logger.info(f"Starting multi-objective hyperparameter optimization with {n_trials} trials.")
+#     study = optuna.create_study(directions=['minimize', 'maximize', 'maximize'])  # Minimize loss, maximize sparsity
+#     study.optimize(objective, n_trials=n_trials)
 
-    logger.info("Multi-objective optimization finished.")
-    logger.info(f"Number of finished trials: {len(study.trials)}")
-    logger.info("Best trials:")
-    for trial in study.best_trials:
-        logger.info(f"  Trial {trial.number} - Combined Objective: {trial.values}")
-        logger.info("  Params: ")
-        for key, value in trial.params.items():
-            logger.info(f"    {key}: {value}")
+#     logger.info("Multi-objective optimization finished.")
+#     logger.info(f"Number of finished trials: {len(study.trials)}")
+#     logger.info("Best trials:")
+#     for trial in study.best_trials:
+#         logger.info(f"  Trial {trial.number} - Combined Objective: {trial.values}")
+#         logger.info("  Params: ")
+#         for key, value in trial.params.items():
+#             logger.info(f"    {key}: {value}")
 
-    return study
+#     return study
 
 # Run the multi-objective optimization
 study = run_multi_objective_optimization(n_trials=50)
@@ -161,13 +165,13 @@ study = run_multi_objective_optimization(n_trials=50)
 
 try:
     fig1 = vis.plot_optimization_history(study)
-    fig1.savefig(os.path.join(log_dir, "optimization_history2.png"))
+    fig1.savefig(os.path.join(log_dir, "static_optimization_history2.png"))
 
     fig2 = vis.plot_param_importances(study)
-    fig2.savefig(os.path.join(log_dir, "param_importances2.png"))
+    fig2.savefig(os.path.join(log_dir, "static_param_importances2.png"))
 
     fig3 = vis.plot_slice(study)
-    fig3.savefig(os.path.join(log_dir, "slice_plot2.png"))
+    fig3.savefig(os.path.join(log_dir, "static_slice_plot2.png"))
 
     logger.info("Visualization plots saved successfully.")
 except Exception as e:

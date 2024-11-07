@@ -1,26 +1,9 @@
-2024-11-05 17:58:02,531 - INFO - Using device: cpu
-2024-11-05 17:58:02,532 - INFO - Loading MNIST dataset...
-2024-11-05 17:58:02,634 - INFO - Dataset split into 48000 training and 12000 validation samples.
-2024-11-05 17:58:02,634 - INFO - Starting multi-objective hyperparameter optimization with 50 trials.
-2024-11-05 17:58:16,907 - INFO - Using device: cpu
-2024-11-05 17:58:16,908 - INFO - Loading MNIST dataset...
-2024-11-05 17:58:16,980 - INFO - Dataset split into 48000 training and 12000 validation samples.
-2024-11-05 17:58:16,980 - INFO - Starting multi-objective hyperparameter optimization with 50 trials.
-2024-11-05 17:58:16,982 - INFO - Starting trial 0: alpha=0.014472411022787355, gamma=0.0009338849944580044
-2024-11-05 17:58:31,736 - INFO - Using device: cpu
-2024-11-05 17:58:31,736 - INFO - Loading MNIST dataset...
-2024-11-05 17:58:31,774 - INFO - Dataset split into 48000 training and 12000 validation samples.
-2024-11-05 17:58:31,775 - INFO - Starting multi-objective hyperparameter optimization with 50 trials.
-2024-11-05 17:58:31,777 - INFO - Starting trial 0: alpha=0.1791480316421392, gamma=0.0004907582742978382
-2024-11-05 18:49:48,533 - INFO - Using device: cuda
-2024-11-05 18:49:48,533 - INFO - Loading MNIST dataset...
-2024-11-05 18:49:53,395 - INFO - Dataset split into 48000 training and 12000 validation samples.
-2024-11-05 18:49:53,395 - INFO - Starting multi-objective hyperparameter optimization with 50 trials.
-2024-11-05 18:49:53,396 - INFO - Starting trial 0: alpha=0.0015812784127902915, gamma=0.00284706894969526
+nohup: ignoring input
 2024-11-05 18:50:12,726 - INFO - Using device: cuda
 2024-11-05 18:50:12,726 - INFO - Loading MNIST dataset...
 2024-11-05 18:50:12,763 - INFO - Dataset split into 48000 training and 12000 validation samples.
 2024-11-05 18:50:12,763 - INFO - Starting multi-objective hyperparameter optimization with 50 trials.
+[I 2024-11-05 18:50:12,763] A new study created in memory with name: no-name-1b359c9c-0e9a-4fcf-a802-83394aa2bb6c
 2024-11-05 18:50:12,764 - INFO - Starting trial 0: alpha=0.0036374483412385987, gamma=0.8763901744812314
 2024-11-05 18:50:23,053 - INFO - Trial 0, Epoch 1/15 - Train Loss: 2.3025
 2024-11-05 18:50:24,769 - INFO - Trial 0, Epoch 1/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
@@ -67,6 +50,7 @@
 2024-11-05 18:53:01,859 - INFO - Trial 0, Epoch 15/15 - Train Loss: 2.3026
 2024-11-05 18:53:03,542 - INFO - Trial 0, Epoch 15/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
 2024-11-05 18:53:03,543 - INFO - Trial 0, Epoch 15/15 - Sparsity: 1.0000
+[I 2024-11-05 18:53:03,543] Trial 0 finished with values: [2.3025848865509033, 1.0] and parameters: {'alpha': 0.0036374483412385987, 'gamma': 0.8763901744812314}.
 2024-11-05 18:53:03,544 - INFO - Starting trial 1: alpha=0.003751667213803799, gamma=0.00013046096959499237
 2024-11-05 18:53:13,201 - INFO - Trial 1, Epoch 1/15 - Train Loss: 2.3024
 2024-11-05 18:53:14,889 - INFO - Trial 1, Epoch 1/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
@@ -113,6 +97,7 @@
 2024-11-05 18:55:51,959 - INFO - Trial 1, Epoch 15/15 - Train Loss: 2.3026
 2024-11-05 18:55:53,645 - INFO - Trial 1, Epoch 15/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
 2024-11-05 18:55:53,645 - INFO - Trial 1, Epoch 15/15 - Sparsity: 1.0000
+[I 2024-11-05 18:55:53,645] Trial 1 finished with values: [2.3025848865509033, 1.0] and parameters: {'alpha': 0.003751667213803799, 'gamma': 0.00013046096959499237}.
 2024-11-05 18:55:53,646 - INFO - Starting trial 2: alpha=0.029488548487201352, gamma=0.16058809507735924
 2024-11-05 18:56:03,333 - INFO - Trial 2, Epoch 1/15 - Train Loss: 2.4644
 2024-11-05 18:56:05,020 - INFO - Trial 2, Epoch 1/15 - Validation Loss: 2.3028, Validation Accuracy: 0.1083
@@ -159,6 +144,7 @@
 2024-11-05 18:58:46,234 - INFO - Trial 2, Epoch 15/15 - Train Loss: 2.3027
 2024-11-05 18:58:48,000 - INFO - Trial 2, Epoch 15/15 - Validation Loss: 2.3020, Validation Accuracy: 0.1083
 2024-11-05 18:58:48,001 - INFO - Trial 2, Epoch 15/15 - Sparsity: 1.0000
+[I 2024-11-05 18:58:48,001] Trial 2 finished with values: [2.302041847229004, 0.9999905132790377] and parameters: {'alpha': 0.029488548487201352, 'gamma': 0.16058809507735924}.
 2024-11-05 18:58:48,001 - INFO - Starting trial 3: alpha=0.006880901947449234, gamma=0.2080996654548195
 2024-11-05 18:58:58,095 - INFO - Trial 3, Epoch 1/15 - Train Loss: 1.0936
 2024-11-05 18:58:59,854 - INFO - Trial 3, Epoch 1/15 - Validation Loss: 0.7387, Validation Accuracy: 0.8053
@@ -205,6 +191,7 @@
 2024-11-05 19:01:44,914 - INFO - Trial 3, Epoch 15/15 - Train Loss: 1.9443
 2024-11-05 19:01:46,778 - INFO - Trial 3, Epoch 15/15 - Validation Loss: 1.7692, Validation Accuracy: 0.3277
 2024-11-05 19:01:46,779 - INFO - Trial 3, Epoch 15/15 - Sparsity: 0.9998
+[I 2024-11-05 19:01:46,779] Trial 3 finished with values: [1.769228411992391, 0.999800778859791] and parameters: {'alpha': 0.006880901947449234, 'gamma': 0.2080996654548195}.
 2024-11-05 19:01:46,780 - INFO - Starting trial 4: alpha=0.00010094925931104278, gamma=0.8713545230562042
 2024-11-05 19:01:56,845 - INFO - Trial 4, Epoch 1/15 - Train Loss: 2.3024
 2024-11-05 19:01:58,666 - INFO - Trial 4, Epoch 1/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
@@ -251,6 +238,7 @@
 2024-11-05 19:04:43,229 - INFO - Trial 4, Epoch 15/15 - Train Loss: 2.3026
 2024-11-05 19:04:44,998 - INFO - Trial 4, Epoch 15/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
 2024-11-05 19:04:44,999 - INFO - Trial 4, Epoch 15/15 - Sparsity: 1.0000
+[I 2024-11-05 19:04:44,999] Trial 4 finished with values: [2.3025848865509033, 1.0] and parameters: {'alpha': 0.00010094925931104278, 'gamma': 0.8713545230562042}.
 2024-11-05 19:04:44,999 - INFO - Starting trial 5: alpha=0.0014670287622285043, gamma=0.046757642210628954
 2024-11-05 19:04:55,067 - INFO - Trial 5, Epoch 1/15 - Train Loss: 2.3025
 2024-11-05 19:04:56,835 - INFO - Trial 5, Epoch 1/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
@@ -297,6 +285,7 @@
 2024-11-05 19:07:41,698 - INFO - Trial 5, Epoch 15/15 - Train Loss: 2.3026
 2024-11-05 19:07:43,467 - INFO - Trial 5, Epoch 15/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
 2024-11-05 19:07:43,467 - INFO - Trial 5, Epoch 15/15 - Sparsity: 1.0000
+[I 2024-11-05 19:07:43,467] Trial 5 finished with values: [2.3025848865509033, 1.0] and parameters: {'alpha': 0.0014670287622285043, 'gamma': 0.046757642210628954}.
 2024-11-05 19:07:43,468 - INFO - Starting trial 6: alpha=0.0008791006500610993, gamma=0.25103886739573594
 2024-11-05 19:07:53,547 - INFO - Trial 6, Epoch 1/15 - Train Loss: 2.3024
 2024-11-05 19:07:55,317 - INFO - Trial 6, Epoch 1/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
@@ -343,6 +332,7 @@
 2024-11-05 19:10:39,893 - INFO - Trial 6, Epoch 15/15 - Train Loss: 2.3026
 2024-11-05 19:10:41,691 - INFO - Trial 6, Epoch 15/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
 2024-11-05 19:10:41,692 - INFO - Trial 6, Epoch 15/15 - Sparsity: 1.0000
+[I 2024-11-05 19:10:41,692] Trial 6 finished with values: [2.3025848865509033, 1.0] and parameters: {'alpha': 0.0008791006500610993, 'gamma': 0.25103886739573594}.
 2024-11-05 19:10:41,692 - INFO - Starting trial 7: alpha=0.00015116930242609574, gamma=0.60696455228998
 2024-11-05 19:10:51,777 - INFO - Trial 7, Epoch 1/15 - Train Loss: 2.3026
 2024-11-05 19:10:53,521 - INFO - Trial 7, Epoch 1/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
@@ -389,6 +379,7 @@
 2024-11-05 19:13:38,580 - INFO - Trial 7, Epoch 15/15 - Train Loss: 2.3026
 2024-11-05 19:13:40,346 - INFO - Trial 7, Epoch 15/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
 2024-11-05 19:13:40,347 - INFO - Trial 7, Epoch 15/15 - Sparsity: 1.0000
+[I 2024-11-05 19:13:40,347] Trial 7 finished with values: [2.3025848865509033, 1.0] and parameters: {'alpha': 0.00015116930242609574, 'gamma': 0.60696455228998}.
 2024-11-05 19:13:40,347 - INFO - Starting trial 8: alpha=0.01977247441316657, gamma=0.5931401627387135
 2024-11-05 19:13:50,434 - INFO - Trial 8, Epoch 1/15 - Train Loss: 0.4988
 2024-11-05 19:13:52,238 - INFO - Trial 8, Epoch 1/15 - Validation Loss: 0.2066, Validation Accuracy: 0.9376
@@ -435,6 +426,7 @@
 2024-11-05 19:16:36,985 - INFO - Trial 8, Epoch 15/15 - Train Loss: 0.2108
 2024-11-05 19:16:38,843 - INFO - Trial 8, Epoch 15/15 - Validation Loss: 0.1530, Validation Accuracy: 0.9524
 2024-11-05 19:16:38,844 - INFO - Trial 8, Epoch 15/15 - Sparsity: 0.9940
+[I 2024-11-05 19:16:38,844] Trial 8 finished with values: [0.153001080373923, 0.9939806755493997] and parameters: {'alpha': 0.01977247441316657, 'gamma': 0.5931401627387135}.
 2024-11-05 19:16:38,844 - INFO - Starting trial 9: alpha=0.1917159095346506, gamma=0.0002558795896138927
 2024-11-05 19:16:48,939 - INFO - Trial 9, Epoch 1/15 - Train Loss: 35.6094
 2024-11-05 19:16:50,786 - INFO - Trial 9, Epoch 1/15 - Validation Loss: 2.3121, Validation Accuracy: 0.0963
@@ -481,6 +473,7 @@
 2024-11-05 19:19:35,379 - INFO - Trial 9, Epoch 15/15 - Train Loss: 2.3172
 2024-11-05 19:19:37,159 - INFO - Trial 9, Epoch 15/15 - Validation Loss: 2.3209, Validation Accuracy: 0.0948
 2024-11-05 19:19:37,159 - INFO - Trial 9, Epoch 15/15 - Sparsity: 0.9832
+[I 2024-11-05 19:19:37,160] Trial 9 finished with values: [2.320922924677531, 0.9831658136523401] and parameters: {'alpha': 0.1917159095346506, 'gamma': 0.0002558795896138927}.
 2024-11-05 19:19:37,160 - INFO - Starting trial 10: alpha=0.2522246410090812, gamma=0.00022752570895937343
 2024-11-05 19:19:47,250 - INFO - Trial 10, Epoch 1/15 - Train Loss: 129.2172
 2024-11-05 19:19:49,044 - INFO - Trial 10, Epoch 1/15 - Validation Loss: 2.3186, Validation Accuracy: 0.0970
@@ -527,6 +520,7 @@
 2024-11-05 19:22:33,396 - INFO - Trial 10, Epoch 15/15 - Train Loss: 2.3214
 2024-11-05 19:22:35,153 - INFO - Trial 10, Epoch 15/15 - Validation Loss: 2.3136, Validation Accuracy: 0.1083
 2024-11-05 19:22:35,153 - INFO - Trial 10, Epoch 15/15 - Sparsity: 0.9230
+[I 2024-11-05 19:22:35,154] Trial 10 finished with values: [2.3135976003011067, 0.9229773125068186] and parameters: {'alpha': 0.2522246410090812, 'gamma': 0.00022752570895937343}.
 2024-11-05 19:22:35,154 - INFO - Starting trial 11: alpha=0.2825514178426595, gamma=0.04467007022393243
 2024-11-05 19:22:45,272 - INFO - Trial 11, Epoch 1/15 - Train Loss: 101.8647
 2024-11-05 19:22:47,086 - INFO - Trial 11, Epoch 1/15 - Validation Loss: 2.3304, Validation Accuracy: 0.0970
@@ -573,6 +567,7 @@
 2024-11-05 19:25:31,619 - INFO - Trial 11, Epoch 15/15 - Train Loss: 2.3256
 2024-11-05 19:25:33,375 - INFO - Trial 11, Epoch 15/15 - Validation Loss: 2.3152, Validation Accuracy: 0.0963
 2024-11-05 19:25:33,375 - INFO - Trial 11, Epoch 15/15 - Sparsity: 0.9303
+[I 2024-11-05 19:25:33,375] Trial 11 finished with values: [2.315162074406942, 0.9303484946945513] and parameters: {'alpha': 0.2825514178426595, 'gamma': 0.04467007022393243}.
 2024-11-05 19:25:33,376 - INFO - Starting trial 12: alpha=0.030392354165718973, gamma=0.08624465394911274
 2024-11-05 19:25:43,494 - INFO - Trial 12, Epoch 1/15 - Train Loss: 2.4276
 2024-11-05 19:25:45,372 - INFO - Trial 12, Epoch 1/15 - Validation Loss: 2.3024, Validation Accuracy: 0.1008
@@ -619,6 +614,7 @@
 2024-11-05 19:28:31,365 - INFO - Trial 12, Epoch 15/15 - Train Loss: 2.3030
 2024-11-05 19:28:33,118 - INFO - Trial 12, Epoch 15/15 - Validation Loss: 2.3029, Validation Accuracy: 0.1083
 2024-11-05 19:28:33,119 - INFO - Trial 12, Epoch 15/15 - Sparsity: 1.0000
+[I 2024-11-05 19:28:33,119] Trial 12 finished with values: [2.3029408378601075, 0.9999881415987971] and parameters: {'alpha': 0.030392354165718973, 'gamma': 0.08624465394911274}.
 2024-11-05 19:28:33,120 - INFO - Starting trial 13: alpha=0.00021366462799391793, gamma=0.03291017243475525
 2024-11-05 19:28:43,302 - INFO - Trial 13, Epoch 1/15 - Train Loss: 2.3026
 2024-11-05 19:28:45,084 - INFO - Trial 13, Epoch 1/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
@@ -665,6 +661,7 @@
 2024-11-05 19:31:29,813 - INFO - Trial 13, Epoch 15/15 - Train Loss: 2.3026
 2024-11-05 19:31:31,561 - INFO - Trial 13, Epoch 15/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
 2024-11-05 19:31:31,561 - INFO - Trial 13, Epoch 15/15 - Sparsity: 1.0000
+[I 2024-11-05 19:31:31,562] Trial 13 finished with values: [2.3025848865509033, 1.0] and parameters: {'alpha': 0.00021366462799391793, 'gamma': 0.03291017243475525}.
 2024-11-05 19:31:31,562 - INFO - Starting trial 14: alpha=0.16674093493961828, gamma=0.48756616300300065
 2024-11-05 19:31:41,666 - INFO - Trial 14, Epoch 1/15 - Train Loss: 28.1070
 2024-11-05 19:31:43,446 - INFO - Trial 14, Epoch 1/15 - Validation Loss: 2.3068, Validation Accuracy: 0.0970
@@ -711,6 +708,7 @@
 2024-11-05 19:34:27,995 - INFO - Trial 14, Epoch 15/15 - Train Loss: 2.3159
 2024-11-05 19:34:29,868 - INFO - Trial 14, Epoch 15/15 - Validation Loss: 2.3070, Validation Accuracy: 0.1083
 2024-11-05 19:34:29,869 - INFO - Trial 14, Epoch 15/15 - Sparsity: 0.9820
+[I 2024-11-05 19:34:29,869] Trial 14 finished with values: [2.3069641660054523, 0.9820392655380631] and parameters: {'alpha': 0.16674093493961828, 'gamma': 0.48756616300300065}.
 2024-11-05 19:34:29,870 - INFO - Starting trial 15: alpha=0.9454199504579626, gamma=0.17766755686279265
 2024-11-05 19:34:39,666 - INFO - Trial 15, Epoch 1/15 - Train Loss: 10655.3662
 2024-11-05 19:34:41,524 - INFO - Trial 15, Epoch 1/15 - Validation Loss: 2.3284, Validation Accuracy: 0.0970
@@ -757,6 +755,7 @@
 2024-11-05 19:37:26,315 - INFO - Trial 15, Epoch 15/15 - Train Loss: 2.3699
 2024-11-05 19:37:28,065 - INFO - Trial 15, Epoch 15/15 - Validation Loss: 2.4158, Validation Accuracy: 0.1050
 2024-11-05 19:37:28,066 - INFO - Trial 15, Epoch 15/15 - Sparsity: 0.1882
+[I 2024-11-05 19:37:28,066] Trial 15 finished with values: [2.4158472073872885, 0.18816199524715282] and parameters: {'alpha': 0.9454199504579626, 'gamma': 0.17766755686279265}.
 2024-11-05 19:37:28,066 - INFO - Starting trial 16: alpha=0.0020719486338909294, gamma=0.5863597083592289
 2024-11-05 19:37:38,155 - INFO - Trial 16, Epoch 1/15 - Train Loss: 2.3022
 2024-11-05 19:37:40,024 - INFO - Trial 16, Epoch 1/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
@@ -803,6 +802,7 @@
 2024-11-05 19:40:24,734 - INFO - Trial 16, Epoch 15/15 - Train Loss: 2.3026
 2024-11-05 19:40:26,592 - INFO - Trial 16, Epoch 15/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
 2024-11-05 19:40:26,592 - INFO - Trial 16, Epoch 15/15 - Sparsity: 1.0000
+[I 2024-11-05 19:40:26,592] Trial 16 finished with values: [2.3025848865509033, 1.0] and parameters: {'alpha': 0.0020719486338909294, 'gamma': 0.5863597083592289}.
 2024-11-05 19:40:26,593 - INFO - Starting trial 17: alpha=0.4144712095891153, gamma=0.0003583127060275261
 2024-11-05 19:40:36,552 - INFO - Trial 17, Epoch 1/15 - Train Loss: 662.1203
 2024-11-05 19:40:38,434 - INFO - Trial 17, Epoch 1/15 - Validation Loss: 2.3475, Validation Accuracy: 0.0948
@@ -849,6 +849,7 @@
 2024-11-05 19:43:23,193 - INFO - Trial 17, Epoch 15/15 - Train Loss: 2.3320
 2024-11-05 19:43:24,932 - INFO - Trial 17, Epoch 15/15 - Validation Loss: 2.3106, Validation Accuracy: 0.1083
 2024-11-05 19:43:24,933 - INFO - Trial 17, Epoch 15/15 - Sparsity: 0.3485
+[I 2024-11-05 19:43:24,933] Trial 17 finished with values: [2.310593159357707, 0.34849232287106124] and parameters: {'alpha': 0.4144712095891153, 'gamma': 0.0003583127060275261}.
 2024-11-05 19:43:24,934 - INFO - Starting trial 18: alpha=0.0022030584753304832, gamma=0.002468912994891079
 2024-11-05 19:43:35,005 - INFO - Trial 18, Epoch 1/15 - Train Loss: 2.3025
 2024-11-05 19:43:36,898 - INFO - Trial 18, Epoch 1/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
@@ -895,6 +896,7 @@
 2024-11-05 19:46:21,291 - INFO - Trial 18, Epoch 15/15 - Train Loss: 2.3026
 2024-11-05 19:46:23,085 - INFO - Trial 18, Epoch 15/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
 2024-11-05 19:46:23,085 - INFO - Trial 18, Epoch 15/15 - Sparsity: 1.0000
+[I 2024-11-05 19:46:23,085] Trial 18 finished with values: [2.3025848865509033, 1.0] and parameters: {'alpha': 0.0022030584753304832, 'gamma': 0.002468912994891079}.
 2024-11-05 19:46:23,086 - INFO - Starting trial 19: alpha=0.03779609905148154, gamma=0.005865103378242369
 2024-11-05 19:46:33,262 - INFO - Trial 19, Epoch 1/15 - Train Loss: 1.5667
 2024-11-05 19:46:35,128 - INFO - Trial 19, Epoch 1/15 - Validation Loss: 0.3465, Validation Accuracy: 0.9065
@@ -941,6 +943,7 @@
 2024-11-05 19:49:20,433 - INFO - Trial 19, Epoch 15/15 - Train Loss: 0.4460
 2024-11-05 19:49:22,284 - INFO - Trial 19, Epoch 15/15 - Validation Loss: 0.2413, Validation Accuracy: 0.9318
 2024-11-05 19:49:22,285 - INFO - Trial 19, Epoch 15/15 - Sparsity: 0.9937
+[I 2024-11-05 19:49:22,285] Trial 19 finished with values: [0.24125934620698294, 0.9936747287983645] and parameters: {'alpha': 0.03779609905148154, 'gamma': 0.005865103378242369}.
 2024-11-05 19:49:22,286 - INFO - Starting trial 20: alpha=0.6917099825533329, gamma=0.02700502860232814
 2024-11-05 19:49:32,402 - INFO - Trial 20, Epoch 1/15 - Train Loss: 1122.2332
 2024-11-05 19:49:34,275 - INFO - Trial 20, Epoch 1/15 - Validation Loss: 2.3853, Validation Accuracy: 0.1083
@@ -987,6 +990,7 @@
 2024-11-05 19:52:19,681 - INFO - Trial 20, Epoch 15/15 - Train Loss: 2.3562
 2024-11-05 19:52:21,569 - INFO - Trial 20, Epoch 15/15 - Validation Loss: 2.3489, Validation Accuracy: 0.1008
 2024-11-05 19:52:21,569 - INFO - Trial 20, Epoch 15/15 - Sparsity: 0.1656
+[I 2024-11-05 19:52:21,569] Trial 20 finished with values: [2.3488708451588947, 0.16561680288016845] and parameters: {'alpha': 0.6917099825533329, 'gamma': 0.02700502860232814}.
 2024-11-05 19:52:21,570 - INFO - Starting trial 21: alpha=0.0014447750202907495, gamma=0.00287710824786839
 2024-11-05 19:52:31,682 - INFO - Trial 21, Epoch 1/15 - Train Loss: 2.3028
 2024-11-05 19:52:33,572 - INFO - Trial 21, Epoch 1/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
@@ -1033,6 +1037,7 @@
 2024-11-05 19:55:17,906 - INFO - Trial 21, Epoch 15/15 - Train Loss: 2.3026
 2024-11-05 19:55:19,775 - INFO - Trial 21, Epoch 15/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
 2024-11-05 19:55:19,776 - INFO - Trial 21, Epoch 15/15 - Sparsity: 1.0000
+[I 2024-11-05 19:55:19,776] Trial 21 finished with values: [2.3025848865509033, 1.0] and parameters: {'alpha': 0.0014447750202907495, 'gamma': 0.00287710824786839}.
 2024-11-05 19:55:19,776 - INFO - Starting trial 22: alpha=0.3872151102153648, gamma=0.0010970863926156463
 2024-11-05 19:55:29,859 - INFO - Trial 22, Epoch 1/15 - Train Loss: 487.7926
 2024-11-05 19:55:31,592 - INFO - Trial 22, Epoch 1/15 - Validation Loss: 2.3335, Validation Accuracy: 0.1050
@@ -1079,6 +1084,7 @@
 2024-11-05 19:58:16,785 - INFO - Trial 22, Epoch 15/15 - Train Loss: 30.7988
 2024-11-05 19:58:18,558 - INFO - Trial 22, Epoch 15/15 - Validation Loss: 2.3054, Validation Accuracy: 0.1075
 2024-11-05 19:58:18,559 - INFO - Trial 22, Epoch 15/15 - Sparsity: 0.3859
+[I 2024-11-05 19:58:18,559] Trial 22 finished with values: [2.305361735026042, 0.38591743706746484] and parameters: {'alpha': 0.3872151102153648, 'gamma': 0.0010970863926156463}.
 2024-11-05 19:58:18,560 - INFO - Starting trial 23: alpha=0.03590046369614216, gamma=0.036458910139324056
 2024-11-05 19:58:28,647 - INFO - Trial 23, Epoch 1/15 - Train Loss: 2.4984
 2024-11-05 19:58:30,470 - INFO - Trial 23, Epoch 1/15 - Validation Loss: 2.3035, Validation Accuracy: 0.1083
@@ -1125,6 +1131,7 @@
 2024-11-05 20:01:15,299 - INFO - Trial 23, Epoch 15/15 - Train Loss: 2.3033
 2024-11-05 20:01:17,142 - INFO - Trial 23, Epoch 15/15 - Validation Loss: 2.3053, Validation Accuracy: 0.1083
 2024-11-05 20:01:17,143 - INFO - Trial 23, Epoch 15/15 - Sparsity: 1.0000
+[I 2024-11-05 20:01:17,143] Trial 23 finished with values: [2.30531774075826, 0.9999881415987971] and parameters: {'alpha': 0.03590046369614216, 'gamma': 0.036458910139324056}.
 2024-11-05 20:01:17,144 - INFO - Starting trial 24: alpha=0.00044995091477213365, gamma=0.00020173048968736686
 2024-11-05 20:01:27,227 - INFO - Trial 24, Epoch 1/15 - Train Loss: 2.3025
 2024-11-05 20:01:28,965 - INFO - Trial 24, Epoch 1/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
@@ -1171,6 +1178,7 @@
 2024-11-05 20:04:13,830 - INFO - Trial 24, Epoch 15/15 - Train Loss: 2.3026
 2024-11-05 20:04:15,730 - INFO - Trial 24, Epoch 15/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
 2024-11-05 20:04:15,730 - INFO - Trial 24, Epoch 15/15 - Sparsity: 1.0000
+[I 2024-11-05 20:04:15,731] Trial 24 finished with values: [2.3025848865509033, 1.0] and parameters: {'alpha': 0.00044995091477213365, 'gamma': 0.00020173048968736686}.
 2024-11-05 20:04:15,731 - INFO - Starting trial 25: alpha=0.0032679519366210852, gamma=0.16419708210145018
 2024-11-05 20:04:25,787 - INFO - Trial 25, Epoch 1/15 - Train Loss: 2.3018
 2024-11-05 20:04:27,576 - INFO - Trial 25, Epoch 1/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
@@ -1217,6 +1225,7 @@
 2024-11-05 20:07:12,807 - INFO - Trial 25, Epoch 15/15 - Train Loss: 2.3026
 2024-11-05 20:07:14,546 - INFO - Trial 25, Epoch 15/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
 2024-11-05 20:07:14,547 - INFO - Trial 25, Epoch 15/15 - Sparsity: 1.0000
+[I 2024-11-05 20:07:14,547] Trial 25 finished with values: [2.3025848865509033, 1.0] and parameters: {'alpha': 0.0032679519366210852, 'gamma': 0.16419708210145018}.
 2024-11-05 20:07:14,548 - INFO - Starting trial 26: alpha=0.0002473164611446913, gamma=0.05256793250259979
 2024-11-05 20:07:24,668 - INFO - Trial 26, Epoch 1/15 - Train Loss: 2.3025
 2024-11-05 20:07:26,577 - INFO - Trial 26, Epoch 1/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
@@ -1263,6 +1272,7 @@
 2024-11-05 20:10:11,595 - INFO - Trial 26, Epoch 15/15 - Train Loss: 2.3026
 2024-11-05 20:10:13,326 - INFO - Trial 26, Epoch 15/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
 2024-11-05 20:10:13,327 - INFO - Trial 26, Epoch 15/15 - Sparsity: 1.0000
+[I 2024-11-05 20:10:13,327] Trial 26 finished with values: [2.3025848865509033, 1.0] and parameters: {'alpha': 0.0002473164611446913, 'gamma': 0.05256793250259979}.
 2024-11-05 20:10:13,327 - INFO - Starting trial 27: alpha=0.0005086163695306962, gamma=0.40808088334936415
 2024-11-05 20:10:23,383 - INFO - Trial 27, Epoch 1/15 - Train Loss: 2.3025
 2024-11-05 20:10:25,120 - INFO - Trial 27, Epoch 1/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
@@ -1309,6 +1319,7 @@
 2024-11-05 20:13:10,274 - INFO - Trial 27, Epoch 15/15 - Train Loss: 2.3026
 2024-11-05 20:13:12,151 - INFO - Trial 27, Epoch 15/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
 2024-11-05 20:13:12,151 - INFO - Trial 27, Epoch 15/15 - Sparsity: 1.0000
+[I 2024-11-05 20:13:12,151] Trial 27 finished with values: [2.3025848865509033, 1.0] and parameters: {'alpha': 0.0005086163695306962, 'gamma': 0.40808088334936415}.
 2024-11-05 20:13:12,152 - INFO - Starting trial 28: alpha=0.00623646899373189, gamma=0.8059764243994604
 2024-11-05 20:13:22,243 - INFO - Trial 28, Epoch 1/15 - Train Loss: 0.8082
 2024-11-05 20:13:24,024 - INFO - Trial 28, Epoch 1/15 - Validation Loss: 0.4319, Validation Accuracy: 0.8764
@@ -1355,6 +1366,7 @@
 2024-11-05 20:16:08,898 - INFO - Trial 28, Epoch 15/15 - Train Loss: 1.6678
 2024-11-05 20:16:10,660 - INFO - Trial 28, Epoch 15/15 - Validation Loss: 1.3877, Validation Accuracy: 0.3707
 2024-11-05 20:16:10,661 - INFO - Trial 28, Epoch 15/15 - Sparsity: 0.9996
+[I 2024-11-05 20:16:10,661] Trial 28 finished with values: [1.3876837479273478, 0.9996395046034313] and parameters: {'alpha': 0.00623646899373189, 'gamma': 0.8059764243994604}.
 2024-11-05 20:16:10,661 - INFO - Starting trial 29: alpha=0.005250485376253177, gamma=0.20570916379899873
 2024-11-05 20:16:20,753 - INFO - Trial 29, Epoch 1/15 - Train Loss: 1.0408
 2024-11-05 20:16:22,509 - INFO - Trial 29, Epoch 1/15 - Validation Loss: 0.5968, Validation Accuracy: 0.8397
@@ -1401,6 +1413,7 @@
 2024-11-05 20:19:07,219 - INFO - Trial 29, Epoch 15/15 - Train Loss: 1.7392
 2024-11-05 20:19:09,066 - INFO - Trial 29, Epoch 15/15 - Validation Loss: 1.5232, Validation Accuracy: 0.3862
 2024-11-05 20:19:09,066 - INFO - Trial 29, Epoch 15/15 - Sparsity: 0.9996
+[I 2024-11-05 20:19:09,066] Trial 29 finished with values: [1.5232189737955728, 0.9995683541962138] and parameters: {'alpha': 0.005250485376253177, 'gamma': 0.20570916379899873}.
 2024-11-05 20:19:09,067 - INFO - Starting trial 30: alpha=0.04931066971255081, gamma=0.009949388165735894
 2024-11-05 20:19:19,139 - INFO - Trial 30, Epoch 1/15 - Train Loss: 2.6874
 2024-11-05 20:19:20,892 - INFO - Trial 30, Epoch 1/15 - Validation Loss: 2.3072, Validation Accuracy: 0.1075
@@ -1447,6 +1460,7 @@
 2024-11-05 20:22:05,471 - INFO - Trial 30, Epoch 15/15 - Train Loss: 2.3044
 2024-11-05 20:22:07,202 - INFO - Trial 30, Epoch 15/15 - Validation Loss: 2.3062, Validation Accuracy: 0.0990
 2024-11-05 20:22:07,203 - INFO - Trial 30, Epoch 15/15 - Sparsity: 1.0000
+[I 2024-11-05 20:22:07,203] Trial 30 finished with values: [2.306221222559611, 0.999983398238316] and parameters: {'alpha': 0.04931066971255081, 'gamma': 0.009949388165735894}.
 2024-11-05 20:22:07,204 - INFO - Starting trial 31: alpha=0.029440441918566717, gamma=0.0037098991979056515
 2024-11-05 20:22:17,217 - INFO - Trial 31, Epoch 1/15 - Train Loss: 2.4536
 2024-11-05 20:22:19,124 - INFO - Trial 31, Epoch 1/15 - Validation Loss: 2.3021, Validation Accuracy: 0.1004
@@ -1493,6 +1507,7 @@
 2024-11-05 20:25:04,714 - INFO - Trial 31, Epoch 15/15 - Train Loss: 2.3029
 2024-11-05 20:25:06,600 - INFO - Trial 31, Epoch 15/15 - Validation Loss: 2.3023, Validation Accuracy: 0.1083
 2024-11-05 20:25:06,601 - INFO - Trial 31, Epoch 15/15 - Sparsity: 1.0000
+[I 2024-11-05 20:25:06,601] Trial 31 finished with values: [2.3023306045532226, 0.9999905132790377] and parameters: {'alpha': 0.029440441918566717, 'gamma': 0.0037098991979056515}.
 2024-11-05 20:25:06,602 - INFO - Starting trial 32: alpha=0.034763113798212335, gamma=0.0040708131116924135
 2024-11-05 20:25:16,694 - INFO - Trial 32, Epoch 1/15 - Train Loss: 2.5479
 2024-11-05 20:25:18,509 - INFO - Trial 32, Epoch 1/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1083
@@ -1539,6 +1554,7 @@
 2024-11-05 20:28:02,850 - INFO - Trial 32, Epoch 15/15 - Train Loss: 2.3032
 2024-11-05 20:28:04,620 - INFO - Trial 32, Epoch 15/15 - Validation Loss: 2.3036, Validation Accuracy: 0.1083
 2024-11-05 20:28:04,620 - INFO - Trial 32, Epoch 15/15 - Sparsity: 1.0000
+[I 2024-11-05 20:28:04,620] Trial 32 finished with values: [2.3036285559336345, 0.999983398238316] and parameters: {'alpha': 0.034763113798212335, 'gamma': 0.0040708131116924135}.
 2024-11-05 20:28:04,621 - INFO - Starting trial 33: alpha=0.009473289673685874, gamma=0.09960404754209715
 2024-11-05 20:28:14,696 - INFO - Trial 33, Epoch 1/15 - Train Loss: 0.5163
 2024-11-05 20:28:16,492 - INFO - Trial 33, Epoch 1/15 - Validation Loss: 0.2521, Validation Accuracy: 0.9241
@@ -1585,6 +1601,7 @@
 2024-11-05 20:31:01,382 - INFO - Trial 33, Epoch 15/15 - Train Loss: 0.6261
 2024-11-05 20:31:03,142 - INFO - Trial 33, Epoch 15/15 - Validation Loss: 0.4548, Validation Accuracy: 0.8628
 2024-11-05 20:31:03,142 - INFO - Trial 33, Epoch 15/15 - Sparsity: 0.9992
+[I 2024-11-05 20:31:03,143] Trial 33 finished with values: [0.45475229835510256, 0.9992102304798858] and parameters: {'alpha': 0.009473289673685874, 'gamma': 0.09960404754209715}.
 2024-11-05 20:31:03,143 - INFO - Starting trial 34: alpha=0.3160671909897881, gamma=0.042408051770328394
 2024-11-05 20:31:13,321 - INFO - Trial 34, Epoch 1/15 - Train Loss: 131.9476
 2024-11-05 20:31:15,137 - INFO - Trial 34, Epoch 1/15 - Validation Loss: 2.3408, Validation Accuracy: 0.0948
@@ -1631,6 +1648,7 @@
 2024-11-05 20:34:00,445 - INFO - Trial 34, Epoch 15/15 - Train Loss: 2.3251
 2024-11-05 20:34:02,278 - INFO - Trial 34, Epoch 15/15 - Validation Loss: 2.3377, Validation Accuracy: 0.1050
 2024-11-05 20:34:02,279 - INFO - Trial 34, Epoch 15/15 - Sparsity: 0.9856
+[I 2024-11-05 20:34:02,279] Trial 34 finished with values: [2.337683349609375, 0.9856205027013438] and parameters: {'alpha': 0.3160671909897881, 'gamma': 0.042408051770328394}.
 2024-11-05 20:34:02,280 - INFO - Starting trial 35: alpha=0.12267959844595104, gamma=0.09221429133295643
 2024-11-05 20:34:12,402 - INFO - Trial 35, Epoch 1/15 - Train Loss: 7.4776
 2024-11-05 20:34:14,208 - INFO - Trial 35, Epoch 1/15 - Validation Loss: 2.3068, Validation Accuracy: 0.0970
@@ -1677,6 +1695,7 @@
 2024-11-05 20:36:59,095 - INFO - Trial 35, Epoch 15/15 - Train Loss: 2.3116
 2024-11-05 20:37:00,856 - INFO - Trial 35, Epoch 15/15 - Validation Loss: 2.3079, Validation Accuracy: 0.1075
 2024-11-05 20:37:00,858 - INFO - Trial 35, Epoch 15/15 - Sparsity: 0.9563
+[I 2024-11-05 20:37:00,858] Trial 35 finished with values: [2.307938356399536, 0.9562899331660508] and parameters: {'alpha': 0.12267959844595104, 'gamma': 0.09221429133295643}.
 2024-11-05 20:37:00,859 - INFO - Starting trial 36: alpha=0.006447068783375616, gamma=0.002302161889001105
 2024-11-05 20:37:10,967 - INFO - Trial 36, Epoch 1/15 - Train Loss: 2.3051
 2024-11-05 20:37:12,735 - INFO - Trial 36, Epoch 1/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
@@ -1723,6 +1742,7 @@
 2024-11-05 20:39:57,228 - INFO - Trial 36, Epoch 15/15 - Train Loss: 2.3026
 2024-11-05 20:39:59,102 - INFO - Trial 36, Epoch 15/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
 2024-11-05 20:39:59,102 - INFO - Trial 36, Epoch 15/15 - Sparsity: 1.0000
+[I 2024-11-05 20:39:59,102] Trial 36 finished with values: [2.3025848865509033, 1.0] and parameters: {'alpha': 0.006447068783375616, 'gamma': 0.002302161889001105}.
 2024-11-05 20:39:59,103 - INFO - Starting trial 37: alpha=0.0010722119565714605, gamma=0.006224334300120125
 2024-11-05 20:40:09,182 - INFO - Trial 37, Epoch 1/15 - Train Loss: 2.3025
 2024-11-05 20:40:11,073 - INFO - Trial 37, Epoch 1/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
@@ -1769,6 +1789,7 @@
 2024-11-05 20:42:56,032 - INFO - Trial 37, Epoch 15/15 - Train Loss: 2.3026
 2024-11-05 20:42:57,882 - INFO - Trial 37, Epoch 15/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
 2024-11-05 20:42:57,885 - INFO - Trial 37, Epoch 15/15 - Sparsity: 1.0000
+[I 2024-11-05 20:42:57,886] Trial 37 finished with values: [2.3025848865509033, 1.0] and parameters: {'alpha': 0.0010722119565714605, 'gamma': 0.006224334300120125}.
 2024-11-05 20:42:57,886 - INFO - Starting trial 38: alpha=0.0017330938296554596, gamma=0.0003445795762314429
 2024-11-05 20:43:07,976 - INFO - Trial 38, Epoch 1/15 - Train Loss: 2.3025
 2024-11-05 20:43:09,823 - INFO - Trial 38, Epoch 1/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
@@ -1815,6 +1836,7 @@
 2024-11-05 20:45:55,048 - INFO - Trial 38, Epoch 15/15 - Train Loss: 2.3026
 2024-11-05 20:45:56,779 - INFO - Trial 38, Epoch 15/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
 2024-11-05 20:45:56,779 - INFO - Trial 38, Epoch 15/15 - Sparsity: 1.0000
+[I 2024-11-05 20:45:56,780] Trial 38 finished with values: [2.3025848865509033, 1.0] and parameters: {'alpha': 0.0017330938296554596, 'gamma': 0.0003445795762314429}.
 2024-11-05 20:45:56,780 - INFO - Starting trial 39: alpha=0.09248569121546114, gamma=0.02603021078928441
 2024-11-05 20:46:06,864 - INFO - Trial 39, Epoch 1/15 - Train Loss: 5.5291
 2024-11-05 20:46:08,633 - INFO - Trial 39, Epoch 1/15 - Validation Loss: 2.3103, Validation Accuracy: 0.0907
@@ -1861,6 +1883,7 @@
 2024-11-05 20:48:54,357 - INFO - Trial 39, Epoch 15/15 - Train Loss: 2.3080
 2024-11-05 20:48:56,264 - INFO - Trial 39, Epoch 15/15 - Validation Loss: 2.3091, Validation Accuracy: 0.0990
 2024-11-05 20:48:56,264 - INFO - Trial 39, Epoch 15/15 - Sparsity: 1.0000
+[I 2024-11-05 20:48:56,264] Trial 39 finished with values: [2.309057919184367, 0.9999810265580753] and parameters: {'alpha': 0.09248569121546114, 'gamma': 0.02603021078928441}.
 2024-11-05 20:48:56,265 - INFO - Starting trial 40: alpha=0.00872204692091516, gamma=0.24185761255341315
 2024-11-05 20:49:06,385 - INFO - Trial 40, Epoch 1/15 - Train Loss: 0.7135
 2024-11-05 20:49:08,279 - INFO - Trial 40, Epoch 1/15 - Validation Loss: 0.4369, Validation Accuracy: 0.8699
@@ -1907,6 +1930,7 @@
 2024-11-05 20:51:52,967 - INFO - Trial 40, Epoch 15/15 - Train Loss: 1.3592
 2024-11-05 20:51:54,811 - INFO - Trial 40, Epoch 15/15 - Validation Loss: 1.1235, Validation Accuracy: 0.6190
 2024-11-05 20:51:54,812 - INFO - Trial 40, Epoch 15/15 - Sparsity: 0.9997
+[I 2024-11-05 20:51:54,812] Trial 40 finished with values: [1.1234894768397012, 0.9996561063651155] and parameters: {'alpha': 0.00872204692091516, 'gamma': 0.24185761255341315}.
 2024-11-05 20:51:54,813 - INFO - Starting trial 41: alpha=0.08729612582884412, gamma=0.00258397945315818
 2024-11-05 20:52:04,913 - INFO - Trial 41, Epoch 1/15 - Train Loss: 3.7630
 2024-11-05 20:52:06,823 - INFO - Trial 41, Epoch 1/15 - Validation Loss: 2.3058, Validation Accuracy: 0.1083
@@ -1953,6 +1977,7 @@
 2024-11-05 20:54:52,085 - INFO - Trial 41, Epoch 15/15 - Train Loss: 2.3089
 2024-11-05 20:54:53,812 - INFO - Trial 41, Epoch 15/15 - Validation Loss: 2.3133, Validation Accuracy: 0.0990
 2024-11-05 20:54:53,812 - INFO - Trial 41, Epoch 15/15 - Sparsity: 0.9994
+[I 2024-11-05 20:54:53,813] Trial 41 finished with values: [2.313301017125448, 0.999402336579373] and parameters: {'alpha': 0.08729612582884412, 'gamma': 0.00258397945315818}.
 2024-11-05 20:54:53,813 - INFO - Starting trial 42: alpha=0.0033851918336806805, gamma=0.0002854815086113505
 2024-11-05 20:55:03,957 - INFO - Trial 42, Epoch 1/15 - Train Loss: 2.3026
 2024-11-05 20:55:05,852 - INFO - Trial 42, Epoch 1/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
@@ -1999,6 +2024,7 @@
 2024-11-05 20:57:50,167 - INFO - Trial 42, Epoch 15/15 - Train Loss: 2.3026
 2024-11-05 20:57:51,932 - INFO - Trial 42, Epoch 15/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
 2024-11-05 20:57:51,933 - INFO - Trial 42, Epoch 15/15 - Sparsity: 1.0000
+[I 2024-11-05 20:57:51,933] Trial 42 finished with values: [2.3025848865509033, 1.0] and parameters: {'alpha': 0.0033851918336806805, 'gamma': 0.0002854815086113505}.
 2024-11-05 20:57:51,934 - INFO - Starting trial 43: alpha=0.0008220268017007068, gamma=0.0009373102584136171
 2024-11-05 20:58:02,034 - INFO - Trial 43, Epoch 1/15 - Train Loss: 2.3025
 2024-11-05 20:58:03,765 - INFO - Trial 43, Epoch 1/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
@@ -2045,6 +2071,7 @@
 2024-11-05 21:00:48,092 - INFO - Trial 43, Epoch 15/15 - Train Loss: 2.3026
 2024-11-05 21:00:49,818 - INFO - Trial 43, Epoch 15/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
 2024-11-05 21:00:49,819 - INFO - Trial 43, Epoch 15/15 - Sparsity: 1.0000
+[I 2024-11-05 21:00:49,819] Trial 43 finished with values: [2.3025848865509033, 1.0] and parameters: {'alpha': 0.0008220268017007068, 'gamma': 0.0009373102584136171}.
 2024-11-05 21:00:49,819 - INFO - Starting trial 44: alpha=0.9344884303550193, gamma=0.002164412807734483
 2024-11-05 21:00:59,862 - INFO - Trial 44, Epoch 1/15 - Train Loss: 6746.9589
 2024-11-05 21:01:01,590 - INFO - Trial 44, Epoch 1/15 - Validation Loss: 2.3368, Validation Accuracy: 0.1083
@@ -2091,6 +2118,7 @@
 2024-11-05 21:03:45,888 - INFO - Trial 44, Epoch 15/15 - Train Loss: 2.3736
 2024-11-05 21:03:47,672 - INFO - Trial 44, Epoch 15/15 - Validation Loss: 2.3985, Validation Accuracy: 0.0907
 2024-11-05 21:03:47,672 - INFO - Trial 44, Epoch 15/15 - Sparsity: 0.1564
+[I 2024-11-05 21:03:47,673] Trial 44 finished with values: [2.398494405110677, 0.15643128530838957] and parameters: {'alpha': 0.9344884303550193, 'gamma': 0.002164412807734483}.
 2024-11-05 21:03:47,673 - INFO - Starting trial 45: alpha=0.22725755794514968, gamma=0.11287202132663707
 2024-11-05 21:03:57,782 - INFO - Trial 45, Epoch 1/15 - Train Loss: 37.1310
 2024-11-05 21:03:59,574 - INFO - Trial 45, Epoch 1/15 - Validation Loss: 2.3356, Validation Accuracy: 0.1084
@@ -2137,6 +2165,7 @@
 2024-11-05 21:06:44,083 - INFO - Trial 45, Epoch 15/15 - Train Loss: 2.3195
 2024-11-05 21:06:45,827 - INFO - Trial 45, Epoch 15/15 - Validation Loss: 2.3295, Validation Accuracy: 0.1050
 2024-11-05 21:06:45,827 - INFO - Trial 45, Epoch 15/15 - Sparsity: 0.9303
+[I 2024-11-05 21:06:45,827] Trial 45 finished with values: [2.329539395014445, 0.9302915743687773] and parameters: {'alpha': 0.22725755794514968, 'gamma': 0.11287202132663707}.
 2024-11-05 21:06:45,828 - INFO - Starting trial 46: alpha=0.003920395477482505, gamma=0.0004301319289236685
 2024-11-05 21:06:55,890 - INFO - Trial 46, Epoch 1/15 - Train Loss: 2.3027
 2024-11-05 21:06:57,707 - INFO - Trial 46, Epoch 1/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
@@ -2183,6 +2212,7 @@
 2024-11-05 21:09:43,150 - INFO - Trial 46, Epoch 15/15 - Train Loss: 2.3026
 2024-11-05 21:09:44,937 - INFO - Trial 46, Epoch 15/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
 2024-11-05 21:09:44,937 - INFO - Trial 46, Epoch 15/15 - Sparsity: 1.0000
+[I 2024-11-05 21:09:44,938] Trial 46 finished with values: [2.3025848865509033, 1.0] and parameters: {'alpha': 0.003920395477482505, 'gamma': 0.0004301319289236685}.
 2024-11-05 21:09:44,938 - INFO - Starting trial 47: alpha=0.001508036962864835, gamma=0.09904337466868982
 2024-11-05 21:09:55,038 - INFO - Trial 47, Epoch 1/15 - Train Loss: 2.3023
 2024-11-05 21:09:56,796 - INFO - Trial 47, Epoch 1/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
@@ -2229,6 +2259,7 @@
 2024-11-05 21:12:42,069 - INFO - Trial 47, Epoch 15/15 - Train Loss: 2.3026
 2024-11-05 21:12:43,918 - INFO - Trial 47, Epoch 15/15 - Validation Loss: 2.3026, Validation Accuracy: 0.1004
 2024-11-05 21:12:43,918 - INFO - Trial 47, Epoch 15/15 - Sparsity: 1.0000
+[I 2024-11-05 21:12:43,919] Trial 47 finished with values: [2.3025848865509033, 1.0] and parameters: {'alpha': 0.001508036962864835, 'gamma': 0.09904337466868982}.
 2024-11-05 21:12:43,919 - INFO - Starting trial 48: alpha=0.13420327604985494, gamma=0.0001565341594185568
 2024-11-05 21:12:53,996 - INFO - Trial 48, Epoch 1/15 - Train Loss: 10.1824
 2024-11-05 21:12:55,759 - INFO - Trial 48, Epoch 1/15 - Validation Loss: 2.3182, Validation Accuracy: 0.1083
@@ -2275,6 +2306,7 @@
 2024-11-05 21:15:40,254 - INFO - Trial 48, Epoch 15/15 - Train Loss: 2.3130
 2024-11-05 21:15:42,132 - INFO - Trial 48, Epoch 15/15 - Validation Loss: 2.3157, Validation Accuracy: 0.0948
 2024-11-05 21:15:42,132 - INFO - Trial 48, Epoch 15/15 - Sparsity: 0.9702
+[I 2024-11-05 21:15:42,133] Trial 48 finished with values: [2.315707696914673, 0.9701524041722599] and parameters: {'alpha': 0.13420327604985494, 'gamma': 0.0001565341594185568}.
 2024-11-05 21:15:42,133 - INFO - Starting trial 49: alpha=0.009649531955856144, gamma=0.0003397111381981589
 2024-11-05 21:15:52,235 - INFO - Trial 49, Epoch 1/15 - Train Loss: 0.4269
 2024-11-05 21:15:54,026 - INFO - Trial 49, Epoch 1/15 - Validation Loss: 0.1644, Validation Accuracy: 0.9517
@@ -2321,6 +2353,7 @@
 2024-11-05 21:18:38,344 - INFO - Trial 49, Epoch 15/15 - Train Loss: 0.3235
 2024-11-05 21:18:40,144 - INFO - Trial 49, Epoch 15/15 - Validation Loss: 0.1755, Validation Accuracy: 0.9473
 2024-11-05 21:18:40,146 - INFO - Trial 49, Epoch 15/15 - Sparsity: 0.9982
+[I 2024-11-05 21:18:40,146] Trial 49 finished with values: [0.1755209102431933, 0.9982449566219684] and parameters: {'alpha': 0.009649531955856144, 'gamma': 0.0003397111381981589}.
 2024-11-05 21:18:40,146 - INFO - Multi-objective optimization finished.
 2024-11-05 21:18:40,149 - INFO - Number of finished trials: 50
 2024-11-05 21:18:40,149 - INFO - Best trials:
@@ -2433,3 +2466,11 @@
 2024-11-05 21:18:40,154 - INFO -     alpha: 0.009649531955856144
 2024-11-05 21:18:40,154 - INFO -     gamma: 0.0003397111381981589
 2024-11-05 21:18:40,154 - INFO - Best hyperparameters: 
+Traceback (most recent call last):
+  File "/home/jacoblai/lp-annealing/bayesian_hyperparameter_tuning_copy.py", line 160, in <module>
+    for key, value in study.best_params.items():
+  File "/home/jacoblai/miniconda3/envs/myenv/lib/python3.10/site-packages/optuna/study/study.py", line 119, in best_params
+    return self.best_trial.params
+  File "/home/jacoblai/miniconda3/envs/myenv/lib/python3.10/site-packages/optuna/study/study.py", line 157, in best_trial
+    raise RuntimeError(
+RuntimeError: A single best trial cannot be retrieved from a multi-objective study. Consider using Study.best_trials to retrieve a list containing the best trials.
