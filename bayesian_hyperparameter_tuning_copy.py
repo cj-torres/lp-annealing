@@ -14,6 +14,11 @@ import os
 
 BATCH_SIZE = 64
 NUM_EPOCHS = 15
+WEIGHTS = {
+    "val_loss" : 0.2,
+    "val_accuracy" : 0.6,
+    "sparsity" : 0.2
+}
 
 log_dir = "logs"
 
@@ -114,60 +119,126 @@ def objective(trial):
         logger.info(f"Trial {trial.number}, Epoch {epoch+1}/{NUM_EPOCHS} - Sparsity: {sparsity:.4f}")
     return val_loss, val_accuracy, sparsity
 
-# def run_optimization(n_trials=50):
-#     logger.info(f"Starting hyperparameter optimization with {n_trials} trials.")
-#     pruner = optuna.pruners.MedianPruner()
-#     study = optuna.create_study(direction='minimize', pruner=pruner)
-#     study.optimize(objective, n_trials=n_trials, timeout=None)
+def objective_single(trial):
+    # Hyperparameter search space
+    alpha = trial.suggest_float('alpha', 1e-4, 1, log=True)
+    gamma = trial.suggest_float('gamma', 1e-4, 1, log=True)
 
-#     logger.info("Optimization finished.")
-#     logger.info(f"Number of finished trials: {len(study.trials)}")
-#     logger.info("Best trial:")
-#     trial = study.best_trial
+    logger.info(f"Starting trial {trial.number}: alpha={alpha}, gamma={gamma}")
 
-#     logger.info(f"  Value: {trial.value}")
-#     logger.info("  Params: ")
-#     for key, value in trial.params.items():
-#         logger.info(f"    {key}: {value}")
+    # Data loaders
+    train_loader = DataLoader(train_dataset, batch_size=BATCH_SIZE, shuffle=True)
+    val_loader = DataLoader(val_dataset, batch_size=BATCH_SIZE, shuffle=False)
 
-#     return study
+    # Model instantiation
+    model = SimpleCNN().to(device)  # Ensure SimpleCNN accepts dropout_rate
 
-# # Run the optimization
-# study = run_optimization(n_trials=2)
+    # Define loss function and optimizer
+    criterion = nn.CrossEntropyLoss()
+    optimizer = LPAnnealingAdam(model.parameters(), alpha=alpha, start_lp=1.0, gamma=gamma)
 
-def run_multi_objective_optimization(n_trials=50):
-    logger.info(f"Starting multi-objective hyperparameter optimization with {n_trials} trials.")
-    study = optuna.create_study(directions=['minimize', 'maximize', 'maximize'])  # Minimize loss, maximize sparsity
-    study.optimize(objective, n_trials=n_trials)
+    # Training loop
+    for epoch in range(NUM_EPOCHS):
+        model.train()
+        epoch_loss = 0.0
+        for inputs, labels in train_loader:
+            inputs, labels = inputs.to(device), labels.to(device)
 
-    logger.info("Multi-objective optimization finished.")
+            optimizer.zero_grad()
+            outputs = model(inputs)
+            loss = criterion(outputs, labels)
+            total_loss = loss
+
+            total_loss.backward()
+            optimizer.step()
+
+            epoch_loss += loss.item() * inputs.size(0)
+
+        epoch_loss /= len(train_loader.dataset)
+        logger.info(f"Trial {trial.number}, Epoch {epoch+1}/{NUM_EPOCHS} - Train Loss: {epoch_loss:.4f}")
+
+        # Validation loop
+        model.eval()
+        val_loss = 0.0
+        correct = 0
+        total = 0
+        with torch.no_grad():
+            for inputs, labels in val_loader:
+                inputs, labels = inputs.to(device), labels.to(device)
+                outputs = model(inputs)
+                loss = criterion(outputs, labels)
+                val_loss += loss.item() * inputs.size(0)
+                _, predicted = torch.max(outputs, 1)
+                total += labels.size(0)
+                correct += (predicted == labels).sum().item()
+
+        val_loss /= len(val_loader.dataset)
+        val_accuracy = correct / total
+        logger.info(f"Trial {trial.number}, Epoch {epoch+1}/{NUM_EPOCHS} - "
+                    f"Validation Loss: {val_loss:.4f}, Validation Accuracy: {val_accuracy:.4f}")
+
+        # Compute sparsity
+        num_params = sum(p.numel() for p in model.parameters())
+        num_nonzero = sum(p.nonzero().size(0) for p in model.parameters())
+        sparsity = 1.0 - (num_nonzero / num_params)
+        logger.info(f"Trial {trial.number}, Epoch {epoch+1}/{NUM_EPOCHS} - Sparsity: {sparsity:.4f}")
+        cumulative_result = (-1 * val_loss) * WEIGHTS["val_loss"] + val_accuracy * WEIGHTS["val_accuracy"] + sparsity * WEIGHTS["sparsity"]
+    return cumulative_result
+
+def run_optimization(n_trials=50):
+    logger.info(f"Starting hyperparameter optimization with {n_trials} trials.")
+    pruner = optuna.pruners.MedianPruner()
+    study = optuna.create_study(direction='maximize', pruner=pruner)
+    study.optimize(objective_single, n_trials=n_trials, timeout=None)
+
+    logger.info("Optimization finished.")
     logger.info(f"Number of finished trials: {len(study.trials)}")
-    logger.info("Best trials:")
-    for trial in study.best_trials:
-        logger.info(f"  Trial {trial.number} - Combined Objective: {trial.values}")
-        logger.info("  Params: ")
-        for key, value in trial.params.items():
-            logger.info(f"    {key}: {value}")
+    logger.info("Best trial:")
+    trial = study.best_trial
+
+    logger.info(f"  Value: {trial.value}")
+    logger.info("  Params: ")
+    for key, value in trial.params.items():
+        logger.info(f"    {key}: {value}")
 
     return study
 
-# Run the multi-objective optimization
-study = run_multi_objective_optimization(n_trials=50)
+# Run the optimization
+study = run_optimization(n_trials=50)
+
+# def run_multi_objective_optimization(n_trials=50):
+#     logger.info(f"Starting multi-objective hyperparameter optimization with {n_trials} trials.")
+#     study = optuna.create_study(directions=['minimize', 'maximize', 'maximize'])  # Minimize loss, maximize sparsity
+#     study.optimize(objective, n_trials=n_trials)
+
+#     logger.info("Multi-objective optimization finished.")
+#     logger.info(f"Number of finished trials: {len(study.trials)}")
+#     logger.info("Best trials:")
+#     for trial in study.best_trials:
+#         logger.info(f"  Trial {trial.number} - Combined Objective: {trial.values}")
+#         logger.info("  Params: ")
+#         for key, value in trial.params.items():
+#             logger.info(f"    {key}: {value}")
+
+#     return study
+
+# # Run the multi-objective optimization
+# study = run_multi_objective_optimization(n_trials=50)
 
 # Analyze results
-# logger.info("Best hyperparameters: ")
-# for key, value in study.best_params.items():
-#     logger.info(f"  {key}: {value}")
+logger.info("Best hyperparameters: ")
+for key, value in study.best_params.items():
+    logger.info(f"  {key}: {value}")
 
 try:
     fig1 = vis.plot_optimization_history(study)
-    fig1.savefig(os.path.join(log_dir, "optimization_history2.png"))
+    fig1.savefig(os.path.join(log_dir, "optimization_history3.png"))
 
     fig2 = vis.plot_param_importances(study)
-    fig2.savefig(os.path.join(log_dir, "param_importances2.png"))
+    fig2.savefig(os.path.join(log_dir, "param_importances3.png"))
 
     fig3 = vis.plot_slice(study)
-    fig3.savefig(os.path.join(log_dir, "slice_plot2.png"))
+    fig3.savefig(os.path.join(log_dir, "slice_plot3.png"))
 
     logger.info("Visualization plots saved successfully.")
 except Exception as e:
